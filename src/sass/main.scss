@@ -1,6 +1,55 @@
-/*
- * Все паршалы импортировать в этот файл
- */
+@import 'normalize';
+@import 'fonts';
+@import 'base';
 
-@import 'normalize.scss';
-@import 'base.scss';
+@import './helpers/variables';
+@import './helpers/mixin';
+@import './helpers/placeholder';
+
+// СЮДА ПОДКЛЮЧАЕМ СВОИ СТИЛИ
+// чтобы подключить Ваш стиль удалите строку //SPARE и на ее месте подключите свой стиль
+
+@import './components/header/header';
+// SPARE
+// SPARE
+// SPARE
+
+@import './components/troubles/troubles';
+// SPARE
+// SPARE
+// SPARE
+
+@import './components/ways/ways';
+// SPARE
+// SPARE
+// SPARE
+
+@import './components/program/program';
+// SPARE
+// SPARE
+// SPARE
+
+@import './components/teacher/teacher';
+// SPARE
+// SPARE
+// SPARE
+
+@import './components/warranty/warranty';
+// SPARE
+// SPARE
+// SPARE
+
+@import './components/reviews/reviews';
+// SPARE
+// SPARE
+// SPARE
+
+@import './components/consultation/consultation';
+// SPARE
+// SPARE
+// SPARE
+
+@import './components/footer/footer';
+// SPARE
+// SPARE
+// SPARE
