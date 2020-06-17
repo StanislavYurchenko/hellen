@@ -40,20 +40,22 @@ img {
   letter-spacing: inherit;
 }
 
+// br - break point
+// w  - width
+
 .container {
   margin: 0 auto;
-
-  @media screen and (max-width: 719px) {
+  @media screen and (max-width: $mobile-bp-max) {
     width: 100%;
-    min-width: 280px;
+    min-width: $mobile-w-min;
   }
-  @media screen and (min-width: 720px) {
-    width: 688px;
+  @media screen and (min-width: $tablet-bp-min) {
+    width: $tablet-w;
   }
-  @media screen and (min-width: 1240px) {
-    width: 1210px;
+  @media screen and (min-width: $desktop-bp-min) {
+    width: $desktop-w;
   }
-  @media screen and (min-width: 1370px) {
-    width: 1342px;
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    width: $ladge-desktop-w;
   }
 }
