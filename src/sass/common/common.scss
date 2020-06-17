@@ -1,40 +1,52 @@
 .heading-main {
-  font-family: 'Montserrat';
-  color: rgb(24, 25, 29);
+  font-family: $main-font-family;
+  color: $fourth-font-color;
+  font-weight: bold;
+  margin: 0;
+  @media screen and (max-width: $mobile-bp-max) {
+    font-size: 20px;
+    line-height: 1.45;
+  }
+  @media screen and (min-width: $tablet-bp-min) {
+    font-size: 26px;
+    line-height: 1.269;
+  }
+  @media screen and (min-width: $desktop-bp-min) {
+    font-size: 58.333px;
+    line-height: 1.3;
+  }
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    font-size: 48px;
+    line-height: 1.208;
+  }
 }
 .heading-section {
+  @media screen and (max-width: $mobile-bp-max) {
+  }
+  @media screen and (min-width: $tablet-bp-min) {
+  }
+  @media screen and (min-width: $desktop-bp-min) {
+  }
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+  }
 }
 .heading-sub {
+  @media screen and (max-width: $mobile-bp-max) {
+  }
+  @media screen and (min-width: $tablet-bp-min) {
+  }
+  @media screen and (min-width: $desktop-bp-min) {
+  }
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+  }
 }
 .heading-sub-sub {
-}
-
-.Комплексная_подготовка_к_ВНО_по_английскому_языку_ {
-  font-size: 48px;
-  font-family: 'Montserrat';
-  color: rgb(24, 25, 29);
-  font-weight: bold;
-  line-height: 1.208;
-}
-.Комплексная__подготовка_к_ВНО_по_английскому_яз {
-  font-size: 58.333px;
-  font-family: 'Montserrat';
-  color: rgb(24, 25, 29);
-  font-weight: bold;
-  line-height: 1.3;
-}
-.Комплексная__подготовка_к_ВНО__по_английскому_я {
-  font-size: 26px;
-  font-family: 'Montserrat';
-  color: rgb(24, 25, 29);
-  font-weight: bold;
-  line-height: 1.269;
-}
-
-.Комплексная__подготовка_к_ВНО__по_английскому_я {
-  font-size: 20px;
-  font-family: 'Montserrat';
-  color: rgb(24, 25, 29);
-  font-weight: bold;
-  line-height: 1.45;
+  @media screen and (max-width: $mobile-bp-max) {
+  }
+  @media screen and (min-width: $tablet-bp-min) {
+  }
+  @media screen and (min-width: $desktop-bp-min) {
+  }
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+  }
 }
