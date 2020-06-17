@@ -1,0 +1,13 @@
+.list-navigation {
+    display: flex;
+    list-style: none;
+}
+
+.list-navigation__item:not(:last-child) {
+    margin-right: 44px;
+}
+
+.list-navigation__link {
+    text-decoration: none;
+    text-transform: uppercase;
+}
