@@ -1,18 +1,31 @@
 // FONTS
-$first-font-family: 'Poppins', sans-serif;
-
-//  COLORS
-$first-main-color: #ba0000;
-$second-main-color: #ffcc00;
-$third-main-color: #ffffff;
-$first-secondary-color: #f4f4f4;
-$border-color: rgba(186, 0, 0, 0.1);
-$first-main-color-contrast: #a30000;
+$main-font-family: 'Montserrat', 'Arial', sans-serif;
+$button-font-family: 'Roboto', 'Arial', sans-serif;
 
 //FONT COLORS
-$first-font-color: #ba0000;
-$second-font-color: #ffcc00;
-$third-font-color: #ffffff;
-$fourth-font-color: #777777;
-$fifth-font-color: #222222;
-$sixth-font-color: #017edf;
+$first-font-color: #000000;
+$second-font-color: #ff6b08;
+$third-font-color: #b9b9b9;
+$fourth-font-color: #18191d;
+$fifth-font-color: #ffffff;
+$sixth-font-color: #111517;
+$seventh-font-color: #858585;
+$eighth-font-color: #fdfefe;
+
+//  COLORS
+$main-color: #ff6b08;
+$main-background-color: #111517;
+$second-background-color: #f1f1f1;
+
+//media
+$mobile-bp-max: 719px;
+$mobile-w-min: 280px;
+
+$tablet-bp-min: 720px;
+$tablet-w: 688px;
+
+$desktop-bp-min: 1240px;
+$desktop-w: 1210px;
+
+$ladge-desktop-bp-min: 1370px;
+$ladge-desktop-w: 1342px;

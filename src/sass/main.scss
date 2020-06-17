@@ -1,10 +1,15 @@
 @import 'normalize';
 @import 'fonts';
-@import 'base';
 
 @import './helpers/variables';
 @import './helpers/mixin';
 @import './helpers/placeholder';
+
+@import 'base';
+@import './common/common';
+// SPARE
+// SPARE
+// SPARE
 
 // СЮДА ПОДКЛЮЧАЕМ СВОИ СТИЛИ
 // чтобы подключить Ваш стиль удалите строку //SPARE и на ее месте подключите свой стиль
