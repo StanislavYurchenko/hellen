@@ -21,32 +21,22 @@
   }
 }
 .heading-section {
+  font-family: $main-font-family;
+  font-weight: bold;
   @media screen and (max-width: $mobile-bp-max) {
+    font-size: 42px;
+    line-height: 1.489;
   }
   @media screen and (min-width: $tablet-bp-min) {
+    font-size: 46px;
+    line-height: 1.365;
   }
   @media screen and (min-width: $desktop-bp-min) {
+    font-size: 26px;
+    line-height: 1.269;
   }
   @media screen and (min-width: $ladge-desktop-bp-min) {
-  }
-}
-.heading-sub {
-  @media screen and (max-width: $mobile-bp-max) {
-  }
-  @media screen and (min-width: $tablet-bp-min) {
-  }
-  @media screen and (min-width: $desktop-bp-min) {
-  }
-  @media screen and (min-width: $ladge-desktop-bp-min) {
-  }
-}
-.heading-sub-sub {
-  @media screen and (max-width: $mobile-bp-max) {
-  }
-  @media screen and (min-width: $tablet-bp-min) {
-  }
-  @media screen and (min-width: $desktop-bp-min) {
-  }
-  @media screen and (min-width: $ladge-desktop-bp-min) {
+    font-size: 20px;
+    line-height: 1.346;
   }
 }
