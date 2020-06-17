@@ -1,0 +1,10 @@
+.consultation {
+  height: 540px;
+  &-background {
+    height: 540px;
+    background: url(../images/consultation/mobile/pic.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
