@@ -8,7 +8,14 @@ ul {
   font-family: $main-font-family;
   color: $fifth-font-color;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 436px;
+  background-image: url(../images/program/mobile/pic.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom 316px right;
+
+  @media (min-resolution: 192dpi) {
+    background-image: url(../images/program/mobile/bg@2x.jpg);
+  }
 }
 
 .program .section-title {
