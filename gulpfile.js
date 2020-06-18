@@ -1,10 +1,16 @@
 'use strict';
 
-const { series, parallel, watch } = require('gulp');
+const {
+  series,
+  parallel,
+  watch
+} = require('gulp');
 const requireDir = require('require-dir');
 const browserSync = require('browser-sync').create();
 
-const tasks = requireDir('./gulp/tasks', { recurse: true });
+const tasks = requireDir('./gulp/tasks', {
+  recurse: true
+});
 const paths = require('./gulp/paths');
 
 const serve = () => {
