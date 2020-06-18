@@ -1,5 +1,7 @@
 .navigation {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .navigation__menu {
@@ -19,6 +21,7 @@
 @media screen and (min-width: $tablet-bp-min) and (max-width: $desktop-bp-min) {
     .navigation__button {
         margin-right: 46px;
+        margin-left: auto;
     }
 }
 
