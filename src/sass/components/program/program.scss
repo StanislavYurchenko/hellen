@@ -18,11 +18,11 @@ ul {
   }
 }
 //semester
-.semester-item:not(:last-of-type) {
+.semesters:not(:last-of-type) {
   margin-bottom: 38px;
 }
 
-.semester-title {
+.semesters__title {
   font-weight: 700;
   font-size: 15px;
   line-height: 29.17px;
@@ -41,7 +41,7 @@ ul {
 
 //program
 
-.program-name {
+.programs__name {
   font-weight: 500;
   font-size: 13px;
   line-height: 26.17px;
@@ -57,7 +57,7 @@ ul {
 }
 
 //subject
-.subject-item {
+.subjects__item {
   font-weight: 400;
   font-size: 11px;
   line-height: 20px;
