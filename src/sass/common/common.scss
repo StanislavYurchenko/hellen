@@ -21,22 +21,19 @@
   }
 }
 .heading-section {
-  font-family: $main-font-family;
-  font-weight: bold;
-  @media screen and (max-width: $mobile-bp-max) {
-    font-size: 42px;
-    line-height: 1.489;
-  }
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+
   @media screen and (min-width: $tablet-bp-min) {
-    font-size: 46px;
-    line-height: 1.365;
+    font-size: 26px;
+    line-height: 62px;
   }
   @media screen and (min-width: $desktop-bp-min) {
-    font-size: 26px;
-    line-height: 1.269;
+    font-size: 42px;
   }
   @media screen and (min-width: $ladge-desktop-bp-min) {
-    font-size: 20px;
-    line-height: 1.346;
+    font-size: 46px;
   }
 }
