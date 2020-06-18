@@ -1,10 +1,232 @@
 .consultation {
   height: 540px;
+
   &-background {
     height: 540px;
-    background: url(../images/consultation/mobile/pic.jpg);
+    background-blend-mode: multiply;
+    background-image: url(../images/consultation/mobile/pic.jpg);
+    background-color: rgba(0, 0, 0, 0.705);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  &-box {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  &_heading {
+    padding-top: 60px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    font-weight: 700;
+    font-family: $main-font-family;
+    color: $fifth-font-color;
+    &-span {
+      color: $second-font-color;
+    }
+  }
+
+  &_text {
+    font-size: 12px;
+    line-height: 20px;
+    font-family: $main-font-family;
+    font-weight: bold;
+    text-align: center;
+    color: $fifth-font-color;
+    margin-bottom: 30px;
+  }
+  &_form {
+    width: 280px;
+    margin: 0 auto;
+    input[name='user-name'] {
+      &::placeholder {
+        color: $fifth-font-color;
+        font-size: 13px;
+        line-height: 37px;
+        font-family: $main-font-family;
+        font-weight: 600;
+      }
+      &:focus::placeholder {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+    }
+    input[name='tel'] {
+      &::placeholder {
+        color: $fifth-font-color;
+        font-size: 13px;
+        line-height: 37px;
+        font-family: $main-font-family;
+        font-weight: 600;
+      }
+
+      &:focus::placeholder {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+    }
+    &-box {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &-box input[name='user-name'] {
+      width: 280px;
+      height: 48px;
+      padding-left: 22px;
+      background: none;
+      border: 1px solid #ffffff;
+      margin-bottom: 20px;
+      outline: none;
+      color: $fifth-font-color;
+      font-weight: 600;
+
+      &:invalid:not(:focus):not(:placeholder-shown) {
+        border: 2px solid #ff0000;
+      }
+
+      &:valid {
+        border: 2px solid #008000;
+      }
+    }
+
+    &-box input[name='tel'] {
+      width: 280px;
+      height: 48px;
+      padding-left: 22px;
+      background: none;
+      border: 1px solid #ffffff;
+      margin-bottom: 54px;
+      color: $fifth-font-color;
+      outline: none;
+      color: $fifth-font-color;
+      font-weight: 600;
+
+      &:invalid:not(:focus):not(:placeholder-shown) {
+        border: 2px solid #ff0000;
+      }
+
+      &:valid {
+        border: 2px solid #008000;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-bp-min) {
+  .consultation {
+    height: 540px;
+
+    &-background {
+      height: 540px;
+      background-image: url(../images/consultation/desctop/pic.jpg);
+    }
+
+    &-box {
+      max-width: 688px;
+    }
+
+    &_heading {
+      margin: 0 auto;
+      padding-top: 70px;
+      margin-bottom: 42px;
+      font-size: 22px;
+      line-height: 38px;
+      max-width: 588px;
+    }
+
+    &_text {
+      max-width: 456px;
+      margin: 0 auto;
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: 600;
+      text-align: left;
+      margin-bottom: 44px;
+    }
+    &_form {
+      width: 400px;
+
+      &-box input[name='user-name'] {
+        width: 400px;
+        height: 50px;
+        padding-left: 24px;
+        margin-bottom: 20px;
+      }
+      &-box input[name='tel'] {
+        width: 400px;
+        height: 50px;
+        padding-left: 24px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-bp-min) {
+  .consultation {
+    height: 750px;
+
+    &-background {
+      height: 750px;
+      background-image: url(../images/consultation/desctop/pic.jpg);
+    }
+
+    &-box {
+      max-width: $desktop-w;
+      margin: 0 auto;
+    }
+
+    &_heading {
+      padding-top: 92px;
+      margin-bottom: 60px;
+      font-size: 38px;
+      line-height: 50px;
+      max-width: 940px;
+    }
+
+    &_text {
+      max-width: 550px;
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 54px;
+    }
+    &_form {
+      width: 620px;
+
+      &-box input[name='user-name'] {
+        width: 620px;
+        height: 70px;
+        padding-left: 28px;
+        margin-bottom: 30px;
+      }
+      &-box input[name='tel'] {
+        width: 620px;
+        height: 70px;
+        padding-left: 28px;
+        margin-bottom: 58px;
+      }
+    }
+    input[name='user-name'] {
+      &::placeholder {
+        font-size: 21px;
+        line-height: 38px;
+        font-weight: 600;
+      }
+    }
+    input[name='tel'] {
+      &::placeholder {
+        font-size: 21px;
+        line-height: 38px;
+        font-weight: 600;
+      }
+    }
   }
 }
