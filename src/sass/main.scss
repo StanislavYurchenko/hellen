@@ -7,16 +7,16 @@
 
 @import 'base';
 @import './common/common';
-// SPARE
-// SPARE
+@import './common/logo';
+@import './common/button';
 // SPARE
 
 // СЮДА ПОДКЛЮЧАЕМ СВОИ СТИЛИ
 // чтобы подключить Ваш стиль удалите строку //SPARE и на ее месте подключите свой стиль
 
-@import './components/header/header';
-// SPARE
-// SPARE
+@import './components/header/header'; 
+@import './components/header/navigation'; 
+@import './components/header/list-navigation';
 // SPARE
 
 @import './components/troubles/troubles';
