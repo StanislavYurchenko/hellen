@@ -35,7 +35,7 @@ ul {
       content: '';
       display: block;
       width: 2px;
-      height: 114%;
+      height: 108%;
       background-color: $third-background-color;
       position: absolute;
       left: 4px;
@@ -63,8 +63,9 @@ ul {
       font-size: 20.83px;
       text-transform: lowercase;
     }
+
     &::before {
-      counter-increment: semester; /* Инкрементирует счетчик*/
+      counter-increment: semester;
       content: counter(semester) ' ';
     }
   }
