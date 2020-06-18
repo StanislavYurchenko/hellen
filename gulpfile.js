@@ -48,3 +48,19 @@ exports.build = series(
   parallel(tasks.css, tasks.fonts, tasks.scripts, tasks.html),
   tasks.inject,
 );
+
+gulp.task('scripts', function () {
+  return gulp.src([
+    'node_modules/jquery/dist/jquery.js',
+    'slick/slick.min.js',
+    'app/assets/js/common.js',
+  ])
+    .pipe(concat('libs.js'))
+    .pipe(gulp.dest('app/assets/js'))
+    .pipe(sourcemaps.init())
+    .pipe(uglify())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('app/assets/js'))
+    .pipe(browserSync.reload({ stream: true, once: true }));
+ });
