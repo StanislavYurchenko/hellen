@@ -230,3 +230,27 @@
     }
   }
 }
+
+@media (min-resolution: 192dpi) {
+  .consultation {
+    &-background {
+      background-image: url(../images/consultation/mobile/pic@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: $tablet-bp-min) {
+    .consultation {
+      &-background {
+        background-image: url(../images/consultation/desctop/pic@2x.jpg);
+      }
+    }
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    .consultation {
+      &-background {
+        background-image: url(../images/consultation/desctop/pic@2x.jpg);
+      }
+    }
+  }
+}
