@@ -1,5 +1,10 @@
 .header {
-    margin-top: 36px;
+    padding-top: 36px;
+    padding-bottom: 50px;
+}
+
+.header__navigation {
+    margin-bottom: 56px;
 }
 
 .navigation__button {
@@ -15,8 +20,8 @@
     }
 }
 
-.header__title-item {
-    display: block;
+.header__information {
+    margin-bottom: 76px;
 }
 
 @media screen and (min-width: $desktop-bp-min) {

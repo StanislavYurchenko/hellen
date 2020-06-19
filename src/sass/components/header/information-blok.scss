@@ -1,0 +1,41 @@
+.information-blok__title {
+    font-family: $main-font-family;
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    margin-bottom: 32px;
+    color: $fourth-font-color;
+}
+
+.information-blok__title-item {
+    display: block;
+}
+
+.information-blok__text {
+    font-family: $main-font-family;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    color: $third-font-color;
+}
+
+.information-blok__warranty{
+    font-family: $main-font-family;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 800;
+    color: $fourth-font-color;
+    margin-bottom: 32px;
+}
+
+.information-blok__warranty-item {
+    color: $second-font-color;
+}
+
+.information-blok__button {
+    display: block;
+    margin: 0 auto;
+}
+

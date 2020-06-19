@@ -27,39 +27,45 @@
     <button type="button" class="navigation__button button">консультация по телефону</button>
     <div class="navigation__bar"></div>
   </div>
-  <div class="header__information">
-      <div class="information-blok">
-          <h2 class="information-blok__title">Комплексная<span class="information-blok__title-item"> подготовка к ВНО</span> по английскому языку</h2>
+  <div class="header__information main-information">
+      <div class="main-information__blok information-blok">
+          <h2 class="information-blok__title">Комплексная<span class="information-blok__title-item">подготовка к ВНО</span>по английскому языку</h2>
           <p class="information-blok__text">Просто не будет.</p>
           <p class="information-blok__warranty">Но ты гарантировано наберешь<span class="information-blok__warranty-item"> +25 баллов</span></p>
           <button class="information-blok__button button">хочу на бесплатное занятие</button>
       </div>
-      <picture>
-        <source media="(max-width: 767px)" sizes="(max-width: 767px) 215w, 430w" srcset="./images/header/mobile/m-pic.png 1x, ./images/header/mobile/m-pic@2x.png 2x">
-        <source media="(max-width: 1279px)" sizes="(max-width: 1279px) 370w, 739w" srcset="./images/header/tablet/t-pic.png 1x, ./images/header/tablet/t-pic@2x.png 2x">
-        <source media="(max-width: 1679px)" sizes="(max-width: 1679px) 685w, 1369w" srcset="./images/header/desctop_1280/d-pic.png 1x, ./images/header/desctop_1280/d-pic@2x.png 2x">
-        <source media="(min-width: 1680px)" sizes="(min-width: 1680px) 839w, 1677w" srcset="./images/header/desctop_1680/pic.png 1x, ./images/header/desctop_1680/pic@2x.png 2x">
+      <picture class="main-information__img">
+        <source media="(max-width: 767px)" srcset="./images/header/mobile/m-pic.png 1x, ./images/header/mobile/m-pic@2x.png 2x">
+        <source media="(max-width: 1279px)" srcset="./images/header/tablet/t-pic.png 1x, ./images/header/tablet/t-pic@2x.png 2x">
+        <source media="(max-width: 1679px)" srcset="./images/header/desctop_1280/d-pic.png 1x, ./images/header/desctop_1280/d-pic@2x.png 2x">
+        <source media="(min-width: 1680px)" srcset="./images/header/desctop_1680/pic.png 1x, ./images/header/desctop_1680/pic@2x.png 2x">
         <img src="./images/header/desctop_1680/pic.png" alt="foto how are classes">
         </picture>
   </div>
-  <ul class="list-benefits">
-    <li class="list-benefits__item">
-      <svg>
+  <ul class="list-benefit">
+    <li class="list-benefit__item">
+      <div class="list-benefi__svg-wrapper">
+      <svg class="list-benefi__svg">
         <use href="./images/sprite.svg#female-student"></use>
       </svg>
-      <p class="list-benefits__text">Адаптированная авторская программа ВНО</p>
+      </div>
+      <p class="list-benefit__text">Адаптированная авторская программа ВНО</p>
     </li>
-    <li class="list-benefits__item">
-      <svg>
+    <li class="list-benefit__item">
+      <div class="list-benefi__svg-wrapper">
+      <svg class="list-benefi__svg">
         <use href="./images/sprite.svg#mobile-learning"></use>
       </svg>
-      <p class="list-benefits__text">Современные методики обучения</p>
+      </div>
+      <p class="list-benefit__text">Современные методики обучения</p>
     </li>
-    <li class="list-benefits__item">
-      <svg>
+    <li class="list-benefit__item">
+      <div class="list-benefi__svg-wrapper">
+      <svg class="list-benefi__svg">
         <use href="./images/sprite.svg#insurance"></use>
       </svg>
-      <p class="list-benefits__text">Финансовая гарантия результата</p>
+      </div>
+      <p class="list-benefit__text">Финансовая гарантия результата</p>
     </li>
   </ul>
 </header>

@@ -1,0 +1,31 @@
+.main-information__blok {
+    margin-bottom: 35px;
+}
+
+.main-information__img {
+    width: 215px;
+    height: 185px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: $tablet-bp-min) {
+    .main-information__img {
+        width: 370px;
+        height: 316px;
+    }
+}
+
+@media screen and (min-width: $desktop-bp-min) {
+    .main-information__img {
+        width: 685px;
+        height: 586px;
+    }
+}
+
+@media screen and (min-width: $ladge-desktop-bp-min) {
+    .main-information__img {
+        width: 839px;
+        height: 717px;
+    }
+}
