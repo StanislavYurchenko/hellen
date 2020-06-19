@@ -64,15 +64,14 @@
   .icon-list {
     background-image: url(../images/teacher/check.svg);
     background-repeat: no-repeat;
-    fill: $main-color;
     list-style: none;
-    width: 12px;
-    height: 16px;
+    background-size: 16px;
 
   }
 
   .teacher-about__experience-item {
     padding-left: 18px;
+
   }
 
   .teacher-about__experience-text {
@@ -80,16 +79,16 @@
     font-family: $main-font-family;
     color: $sixth-font-color;
     font-weight: bold;
-  }
-
-  .teacher-about__biography {
-    font-size: 11px;
-    font-family: $main-font-family;
-    color: $seventh-font-color;
+    line-height: 1.8;
+    margin-left: 20px;
   }
 
   .teacher-about__biography-text {
     margin-bottom: 28px;
+    font-size: 11px;
+    font-family: $main-font-family;
+    color: $seventh-font-color;
+    line-height: 1.8;
   }
 
   .teacher-about__certificate {
@@ -101,7 +100,5 @@
 
   .teacher-about__certificate:hover {
     color: $second-font-color;
-
   }
-
 }
