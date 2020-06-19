@@ -1,55 +1,54 @@
 .logo {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 82px;
-    text-decoration: none;
+  text-decoration: none;
 }
 
+.logo__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .logo__item {
-    font-family: $main-font-family;
-    color: $first-font-color;
-    font-size: 15px;
-    font-weight: 800;
-    letter-spacing: 0.03em;
+  font-family: $main-font-family;
+  color: $first-font-color;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
 }
 
 .logo__svg {
-    width: 26px;
-    height: 26px;
-    fill: $main-color;
+  width: 35px;
+  height: 30px;
+  fill: $main-color;
 }
 
 .logo__text {
-    font-family: $main-font-family;
-    color: $second-font-color;
-    font-size: 6.1px;
-    font-weight: 700;
-    letter-spacing: 0.13em;
+  font-family: $main-font-family;
+  color: $second-font-color;
+  font-size: 6.1px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
 }
 
 .logo__text-item {
-    color: $first-font-color;
+  color: $first-font-color;
 }
 
-
 @media screen and (min-width: $tablet-bp-min) {
-    .logo {
-        width: 130px;
-    }
-
-    .logo__item {
-        font-size: 25px;
-    }
-
-    .logo__svg {
-        width: 35px;
-        height: 30px;
-    }
-
-    .logo__text {
-        font-size: 10px;
-        letter-spacing: 0.11em;
-    }
+  .logo {
+    width: 130px;
   }
 
+  .logo__item {
+    font-size: 25px;
+  }
+
+  .logo__svg {
+    width: 35px;
+    height: 30px;
+  }
+
+  .logo__text {
+    font-size: 10px;
+    letter-spacing: 0.11em;
+  }
+}
