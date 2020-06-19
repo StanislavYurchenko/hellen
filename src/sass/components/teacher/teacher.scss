@@ -1,0 +1,107 @@
+.teacher {
+  @media screen and (max-width: $mobile-bp-max) {
+    padding-top: 20px;
+    padding-bottom: 28px;
+  }
+
+  @media screen and (min-width: $tablet-bp-min) {
+    padding-top: 30px;
+    padding-bottom: 33px;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    padding-top: 46px;
+    padding-bottom: 50px;
+  }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    padding-top: 62px;
+    padding-bottom: 74px;
+  }
+
+  .heading-section {
+    margin-bottom: 30px;
+  }
+
+  .teacher-about {
+    @media screen and (max-width: $mobile-bp-max) {
+      margin-top: 26px;
+    }
+  }
+
+  .teacher-about__name {
+    font-size: 16px;
+    font-family: $main-font-family;
+    color: $sixth-font-color;
+    margin-bottom: 10px;
+  }
+
+  .teacher-about__name::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $fourth-background-color;
+    margin-bottom: 30px;
+    opacity: 0.38;
+  }
+
+  .teacher-about__experience {
+    margin-bottom: 22px;
+
+    @media screen and (min-width: $tablet-bp-min) {}
+  }
+
+  .teacher-about__experience::after {
+    display: block;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: $main-color;
+    margin-top: 20px;
+  }
+
+  .icon-list {
+    background-image: url(../images/teacher/check.svg);
+    background-repeat: no-repeat;
+    fill: $main-color;
+    list-style: none;
+    width: 12px;
+    height: 16px;
+
+  }
+
+  .teacher-about__experience-item {
+    padding-left: 18px;
+  }
+
+  .teacher-about__experience-text {
+    font-size: 13px;
+    font-family: $main-font-family;
+    color: $sixth-font-color;
+    font-weight: bold;
+  }
+
+  .teacher-about__biography {
+    font-size: 11px;
+    font-family: $main-font-family;
+    color: $seventh-font-color;
+  }
+
+  .teacher-about__biography-text {
+    margin-bottom: 28px;
+  }
+
+  .teacher-about__certificate {
+    font-size: 11px;
+    font-family: $main-font-family;
+    color: $sixth-font-color;
+    text-decoration: underline;
+  }
+
+  .teacher-about__certificate:hover {
+    color: $second-font-color;
+
+  }
+
+}
