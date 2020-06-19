@@ -9,10 +9,10 @@
 
   &__item {
     @media screen and (min-width: $tablet-bp-min) {
-      width: 150px;
+      width: 152px;
 
       &:not(:last-of-type) {
-        margin-right: 30px;
+        margin-right: 28px;
       }
     }
   }
@@ -23,7 +23,7 @@
     line-height: 26.17px;
     letter-spacing: 0.05em;
     color: $second-font-color;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 
     &::before {
       content: '';

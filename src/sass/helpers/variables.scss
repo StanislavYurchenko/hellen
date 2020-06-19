@@ -23,7 +23,7 @@ $mobile-bp-max: 767px;
 $mobile-w-min: 280px;
 
 $tablet-bp-min: 768px;
-$tablet-w: 688px;
+$tablet-w: 674px;
 
 $desktop-bp-min: 1280px;
 $desktop-w: 1210px;
@@ -31,4 +31,6 @@ $desktop-w: 1210px;
 $ladge-desktop-bp-min: 1680px;
 $ladge-desktop-w: 1342px;
 
-$semester-mb: 38px;
+$semester-mb: 25px;
+$semester-tablet-mb: 20px;
+$before-tablet: calc(100% + #{$semester-tablet-mb});
