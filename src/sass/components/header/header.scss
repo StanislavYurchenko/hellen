@@ -15,6 +15,10 @@
     }
 }
 
+.header__title-item {
+    display: block;
+}
+
 @media screen and (min-width: $desktop-bp-min) {
     .navigation__button {
     min-width: 300px;
