@@ -1,45 +1,28 @@
 <section class="teacher">
   <div class="container">
+    <h2 class="heading-section">Преподаватель</h2>
     <div class="teacher-wrapper">
-      <h2 class="heading-section">Преподаватель</h2>
-      <picture class="teacher-wrapper__img">
-        <source
-          srcset="
-            ../images/teacher/mobile/pic.jpg,
-            ../images/teacher/mobile/pic@2x.jpg
-          "
-          media="(max-width: 280px)"
-        />
-        <source
-          srcset="
-            ../images/teacher/tablet/pic.jpg,
-            ../images/teacher/tablet/pic@2x.jpg
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            ../images/teacher/desctop_1280/pic.png,
-            ../images/teacher/desctop_1280/pic@2x.jpg
-          "
-          media="(min-width: 1280px)"
-        />
-        <source
-          srcset="
-            ../images/teacher/desctop_1680/pic.png,
-            ../images/teacher/desctop_1680/pic@2x.jpg
-          "
-          media="($desktop-bp-min)"
-          media="(min-width: 1680px)"
-        />
-        <img
-          srcset="
-            ../images/teacher/desctop_1280/pic.png,
-            ../images/teacher/desctop_1680/pic@2x.jpg
-          "
-          alt="default image"
-        />
-      </picture>
+      <div class="teacher__name">
+        <picture class="teacher__img">
+          <source srcset="
+              ../images/teacher/mobile/pic.jpg,
+              ../images/teacher/mobile/pic@2x.jpg 2x
+            " media="(max-width: 767px)" />
+          <source srcset="
+              ../images/teacher/tablet/pic.jpg,
+              ../images/teacher/tablet/pic@2x.jpg 2x
+            " media="(max-width: 1279px)" />
+          <source srcset="
+              ../images/teacher/desctop_1280/pic.png,
+              ../images/teacher/desctop_1280/pic@2x.png 2x
+            " media="(max-width: 1679px)" />
+          <source srcset="
+              ../images/teacher/desctop_1680/pic.jpg,
+              ../images/teacher/desctop_1680/pic@2x.jpg 2x
+            " media="(min-width: 1680px)" />
+          <img src="../images/teacher/desctop_1280/pic.png" alt="teacher_photo" />
+        </picture>
+      </div>
       <div class="teacher-about">
         <h3 class="teacher-about__name">Елена Морева</h3>
         <ul class="teacher-about__experience">
@@ -60,8 +43,7 @@
             </p>
           </li>
         </ul>
-      </div>
-      <div class="teacher-about__biography">
+
         <p class="teacher-about__biography-text">
           Высшее образование получила в Институте международных отношений НАУ по
           специальности переводчик - аналитик.
@@ -77,13 +59,10 @@
           Teaching (GEMS education), Powerful Tools for Teaching and Learning
           (University of Houston).
         </p>
+
+        <a class="teacher-about__certificate" href="https://www.cambridgeenglish.org/exams-and-tests/"
+          target="blank">Cambridge English Entry Level Certificate</a>
       </div>
-      <a
-        class="teacher-about__certificate"
-        href="https://www.cambridgeenglish.org/exams-and-tests/"
-        target="blank"
-        >Cambridge English Entry Level Certificate</a
-      >
     </div>
   </div>
 </section>

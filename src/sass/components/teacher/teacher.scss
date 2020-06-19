@@ -20,85 +20,187 @@
   }
 
   .heading-section {
-    margin-bottom: 30px;
-  }
-
-  .teacher-about {
     @media screen and (max-width: $mobile-bp-max) {
-      margin-top: 26px;
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+
+    @media screen and (min-width: $tablet-bp-min) {
+      margin-bottom: 40px;
+      font-size: 29px;
+    }
+
+    @media screen and (min-width: $desktop-bp-min) {
+      margin-bottom: 62px;
+      font-size: 40px;
+    }
+
+    @media screen and (min-width: $ladge-desktop-bp-min) {
+      margin-bottom: 82px;
+      font-size: 46px;
     }
   }
 
-  .teacher-about__name {
-    font-size: 16px;
-    font-family: $main-font-family;
-    color: $sixth-font-color;
-    margin-bottom: 10px;
-  }
+  .teacher-wrapper {
+    @media screen and (min-width: $tablet-bp-min) {
+      display: flex;
+      justify-content: flex-start;
+    }
 
-  .teacher-about__name::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: $fourth-background-color;
-    margin-bottom: 30px;
-    opacity: 0.38;
-  }
+    .teacher__name {
+      @media screen and (min-width: $tablet-bp-min) {
+        margin-right: 46px;
+      }
 
-  .teacher-about__experience {
-    margin-bottom: 22px;
+      @media screen and (min-width: $desktop-bp-min) {
+        margin-right: 86px;
+      }
 
-    @media screen and (min-width: $tablet-bp-min) {}
-  }
+      @media screen and (min-width: $ladge-desktop-bp-min) {
+        margin-right: 92px;
+      }
+    }
 
-  .teacher-about__experience::after {
-    display: block;
-    content: '';
-    width: 25px;
-    height: 2px;
-    background-color: $main-color;
-    margin-top: 20px;
-  }
+    .teacher__img {
+      @media screen and (min-width: $tablet-bp-min) {
+        width: 246px;
+        height: 320px;
+      }
 
-  .icon-list {
-    background-image: url(../images/teacher/check.svg);
-    background-repeat: no-repeat;
-    list-style: none;
-    background-size: 16px;
+      @media screen and (min-width: $desktop-bp-min) {
+        width: 492px;
+        height: 644px;
+      }
+    }
 
-  }
+    .teacher-about {
+      @media screen and (max-width: $mobile-bp-max) {
+        margin-top: 26px;
+      }
 
-  .teacher-about__experience-item {
-    padding-left: 18px;
+      .teacher-about__name {
+        font-size: 16px;
+        font-family: $main-font-family;
+        color: $sixth-font-color;
+        margin-bottom: 10px;
+      }
 
-  }
+      @media screen and (min-width: $tablet-bp-min) {
+        width: 396px;
 
-  .teacher-about__experience-text {
-    font-size: 13px;
-    font-family: $main-font-family;
-    color: $sixth-font-color;
-    font-weight: bold;
-    line-height: 1.8;
-    margin-left: 20px;
-  }
+        .teacher-about__name {
+          font-size: 29px;
+          margin-bottom: 16px;
+        }
+      }
 
-  .teacher-about__biography-text {
-    margin-bottom: 28px;
-    font-size: 11px;
-    font-family: $main-font-family;
-    color: $seventh-font-color;
-    line-height: 1.8;
-  }
+      @media screen and (min-width: $desktop-bp-min) {
+        width: 610px;
+      }
 
-  .teacher-about__certificate {
-    font-size: 11px;
-    font-family: $main-font-family;
-    color: $sixth-font-color;
-    text-decoration: underline;
-  }
+      @media screen and (min-width: $ladge-desktop-bp-min) {
+        width: 650px;
+      }
 
-  .teacher-about__certificate:hover {
-    color: $second-font-color;
+      .teacher-about__name::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: $fourth-background-color;
+        margin-bottom: 30px;
+        opacity: 0.38;
+      }
+
+      .teacher-about__experience {
+        @media screen and (max-width: $mobile-bp-max) {
+          margin-bottom: 20px;
+        }
+
+        @media screen and (min-width: $desktop-bp-min) {
+          margin-bottom: 40px;
+        }
+      }
+
+      .teacher-about__experience::after {
+        display: block;
+        content: '';
+        width: 25px;
+        height: 2px;
+        background-color: $main-color;
+        margin-top: 20px;
+
+        @media screen and (min-width: $desktop-bp-min) {
+          margin-bottom: 40px;
+        }
+
+      }
+
+      .icon-list {
+        background-image: url(../images/teacher/check.svg);
+        background-repeat: no-repeat;
+        list-style: none;
+        background-size: 16px;
+      }
+
+      .teacher-about__experience-item {
+        padding-left: 18px;
+      }
+
+      .teacher-about__experience-text {
+        @media screen and (max-width: $mobile-bp-max) {
+          font-size: 13px;
+          font-family: $main-font-family;
+          color: $sixth-font-color;
+          font-weight: bold;
+          line-height: 1.8;
+          margin-left: 20px;
+        }
+
+        @media screen and (min-width: $desktop-bp-min) {
+          font-size: 17px;
+          line-height: 1.75;
+          font-weight: bold;
+          margin-left: 20px;
+
+        }
+      }
+
+      .teacher-about__biography-text {
+        @media screen and (max-width: $mobile-bp-max) {
+          font-size: 11px;
+          font-family: $main-font-family;
+          color: $seventh-font-color;
+          line-height: 1.8;
+          margin-bottom: 28px;
+        }
+
+        @media screen and (min-width: $desktop-bp-min) {
+          font-size: 17px;
+          line-height: 1.75;
+          margin-bottom: 28px;
+
+        }
+      }
+
+      .teacher-about__certificate {
+        @media screen and (max-width: $mobile-bp-max) {
+          font-size: 11px;
+          font-family: $main-font-family;
+          color: $sixth-font-color;
+          text-decoration: underline;
+        }
+
+        @media screen and (min-width: $desktop-bp-min) {
+          font-size: 17px;
+        }
+
+
+      }
+
+      .teacher-about__certificate:hover {
+        color: $second-font-color;
+      }
+    }
   }
 }
