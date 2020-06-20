@@ -1,0 +1,27 @@
+.list-navigation {
+    list-style: none;
+}
+
+.list-navigation__item {
+    display: flex;
+
+    &:not(:last-child) {
+        margin-right: 44px;
+    }
+    
+}
+
+.list-navigation__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $button-font-family;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: $third-font-color;
+    transition: color 250ms linear;
+
+    &:hover {
+        color: $second-font-color;
+    }
+}

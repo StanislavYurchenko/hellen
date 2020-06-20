@@ -16,16 +16,31 @@ $eighth-font-color: #fdfefe;
 $main-color: #ff6b08;
 $main-background-color: #111517;
 $second-background-color: #f1f1f1;
+$fourth-background-color: #858585;
+$third-background-color: #546264;
+$thr-background-color: #ffffff;
+
+//shadow-color
+$rev-shadow: #1d1d1b17;
+
+//border-color
+$border-color:#ff00004d;
 
 //media
-$mobile-bp-max: 719px;
+$mobile-bp-max: 767px;
 $mobile-w-min: 280px;
 
-$tablet-bp-min: 720px;
+$tablet-bp-min: 768px;
 $tablet-w: 688px;
+$tablet-bp-max: 1279px;
 
-$desktop-bp-min: 1240px;
+$desktop-bp-min: 1280px;
 $desktop-w: 1210px;
-
-$ladge-desktop-bp-min: 1370px;
+$desktop-bp-max: 1679px;
+$ladge-desktop-bp-min: 1680px;
 $ladge-desktop-w: 1342px;
+
+$semester-mb: 25px;
+$semester-tablet-mb: 31px;
+$vertical-line: calc(100% + #{$semester-tablet-mb});
+$horizont-line-desc: calc(#{$desktop-bp-min} / 2 - 52vw);

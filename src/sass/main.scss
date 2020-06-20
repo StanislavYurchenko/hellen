@@ -4,20 +4,24 @@
 @import './helpers/variables';
 @import './helpers/mixin';
 @import './helpers/placeholder';
+@import './utilities/slick.scss';
+@import './utilities/slick-theme.scss';
 
 @import 'base';
 @import './common/common';
-// SPARE
-// SPARE
+@import './common/logo';
+@import './common/button';
 // SPARE
 
 // СЮДА ПОДКЛЮЧАЕМ СВОИ СТИЛИ
 // чтобы подключить Ваш стиль удалите строку //SPARE и на ее месте подключите свой стиль
 
 @import './components/header/header';
-// SPARE
-// SPARE
-// SPARE
+@import './components/header/navigation';
+@import './components/header/list-navigation';
+@import './components/header/information-blok';
+@import './components/header/main-information';
+@import './components/header/list-benefit';
 
 @import './components/troubles/troubles';
 // SPARE
@@ -30,6 +34,11 @@
 // SPARE
 
 @import './components/program/program';
+@import './components/program/semester-list';
+@import './components/program/program-list';
+@import './components/program/subject-list';
+
+@import './components/choice/choice';
 // SPARE
 // SPARE
 // SPARE
@@ -45,7 +54,6 @@
 // SPARE
 
 @import './components/reviews/reviews';
-// SPARE
 // SPARE
 // SPARE
 

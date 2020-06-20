@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  // font-family: $first-font-family;
+  font-family: $main-font-family;
 }
 
 .visually-hidden {
@@ -46,8 +46,8 @@ img {
 .container {
   margin: 0 auto;
   @media screen and (max-width: $mobile-bp-max) {
-    width: 100%;
-    min-width: $mobile-w-min;
+    // width: 100%;
+    width: $mobile-w-min;
   }
   @media screen and (min-width: $tablet-bp-min) {
     width: $tablet-w;
