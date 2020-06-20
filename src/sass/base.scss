@@ -47,7 +47,7 @@ img {
   margin: 0 auto;
   @media screen and (max-width: $mobile-bp-max) {
     // width: 100%;
-    min-width: $mobile-w-min;
+    width: $mobile-w-min;
   }
   @media screen and (min-width: $tablet-bp-min) {
     width: $tablet-w;
