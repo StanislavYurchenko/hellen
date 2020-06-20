@@ -18,16 +18,49 @@
   line-height: 1.327;
 }
 
+@media screen and (min-width: $tablet-bp-min) {
+  .mobile-heading {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $mobile-bp-max) {
+  .tablet-heading {
+    display: none;
+  }
+}
+
 .slick-slide {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: $thr-background-color;
   box-shadow: 4px 6.928px 34.96px 11.04px $rev-shadow;
   margin-bottom: 18px;
+
+  @media screen and (min-width: $tablet-bp-min) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
-.slick-slider__picture {
+.slick-slide__images-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: $tablet-bp-min) {
+    margin-top: 42px;
+  }
+}
+
+@media screen and (min-width: $tablet-bp-min) {
+  .slick-slide__text-wrapper {
+    max-width: 480px;
+    margin-top: 42px;
+  }
+}
+
+.slick-slide__picture {
   height: 80px;
   width: 80px;
   margin-top: 20px;
@@ -39,7 +72,7 @@
   text-decoration: none;
 }
 
-.slick-slider__icon {
+.slick-slide__icon {
   width: 25px;
   height: 14px;
   background-size: cover;
@@ -52,16 +85,22 @@
   }
 }
 
-.slick-slide-heading {
+.slick-slide__heading {
   font-family: $main-font-family;
   color: $second-font-color;
   font-size: 13px;
   font-weight: bold;
   line-height: 2.244;
   text-align: center;
+
+  @media screen and (min-width: $tablet-bp-min) {
+    font-size: 18px;
+    line-height: 1.62;
+    text-align: left;
+  }
 }
 
-.slick-slide-descr {
+.slick-slide__descr {
   font-size: 11px;
   font-family: $main-font-family;
   color: $seventh-font-color;
@@ -70,20 +109,36 @@
   padding-left: 28px;
   padding-right: 28px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet-bp-min) {
+    font-size: 12.5px;
+    line-height: 1.333;
+    text-align: left;
+  }
 }
 
-.slick-slide-comment {
+.slick-slide__comment {
   font-size: 11px;
   font-family: $main-font-family;
   color: $fourth-font-color;
   line-height: 1.818;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   padding-left: 28px;
   padding-right: 28px;
+
+  @media screen and (min-width: $tablet-bp-min) {
+    text-align: left;
+  }  
 }
 
-.slick-slide-comment--readmore {
+@media screen and (max-width: $mobile-bp-max) {
+  .slick-slide__comment--tab {
+    display: none;
+  }
+}
+
+.slick-slide__comment--readmore {
   height: 18px;
   font-size: 11px;
   font-family: $main-font-family;
