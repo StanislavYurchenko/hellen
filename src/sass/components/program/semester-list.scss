@@ -18,8 +18,8 @@
       display: block;
       position: absolute;
       top: -44px;
-      width: 100vw;
-      left: $desctop-line;
+      width: 120vw;
+      left: $horizont-line-desc;
       height: 2px;
       background-color: $third-background-color;
     }
@@ -49,7 +49,7 @@
       top: 18px;
 
       @media screen and (min-width: $tablet-bp-min) {
-        height: $before-tablet;
+        height: $vertical-line;
       }
 
       @media screen and (min-width: $desktop-bp-min) {
