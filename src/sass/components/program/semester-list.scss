@@ -1,7 +1,10 @@
 //semesters-list
 .semesters {
-  @media screen and (max-width: $tablet-bp-max) {
-    padding-left: 88px;
+  @media screen and (max-width: $mobile-bp-max) {
+    padding-left: 67px;
+  }
+  @media screen and (min-width: $tablet-bp-min) and (max-width: $tablet-bp-max) {
+    padding-left: 95px;
   }
   @media screen and (min-width: $desktop-bp-min) {
     display: flex;
@@ -46,7 +49,7 @@
       content: '';
       display: block;
       width: 2px;
-      height: calc(100% + #{$semester-mb});
+      height: calc(100% - #{$circle} + #{$semester-mb});
       background-color: $third-background-color;
       position: absolute;
       left: 4px;
@@ -54,6 +57,7 @@
 
       @media screen and (min-width: $tablet-bp-min) {
         height: $vertical-line;
+        top: 20px;
       }
 
       @media screen and (min-width: $desktop-bp-min) {
@@ -68,8 +72,8 @@
     &::after {
       content: '';
       display: block;
-      width: 10px;
-      height: 10px;
+      width: $circle;
+      height: $circle;
       border-radius: 50%;
       background-color: $main-color;
       position: absolute;

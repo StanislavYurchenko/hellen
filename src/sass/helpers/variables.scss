@@ -36,5 +36,6 @@ $ladge-desktop-w: 1342px;
 
 $semester-mb: 25px;
 $semester-tablet-mb: 31px;
-$vertical-line: calc(100% + #{$semester-tablet-mb});
+$circle: 10px;
+$vertical-line: calc(100% - #{$circle} + #{$semester-tablet-mb});
 $horizont-line-desc: calc(#{$desktop-bp-min} / 2 - 52vw);
