@@ -1,6 +1,35 @@
 .header {
-  padding-top: 36px;
-  padding-bottom: 50px;
+  padding-top: 34px;
+  padding-bottom: 36px;
+
+  @media screen and (min-width: $tablet-bp-min) {
+    padding-bottom: 53px;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    padding-top: 36px;
+    padding-bottom: 96px;
+  }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    padding-bottom: 119px;
+  }
+}
+
+.header__navigation {
+  margin-bottom: 54px;
+
+  @media screen and (min-width: $tablet-bp-min) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    margin-bottom: 44px;
+  }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    margin-bottom: 50px;
+  }
 }
 
 .header__bg {
@@ -8,10 +37,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top 65% left 0px;
-}
-
-.header__navigation {
-  margin-bottom: 56px;
 }
 
 .navigation__button {
@@ -25,16 +50,31 @@
     background-color: $main-color;
     color: $fifth-font-color;
   }
+
+  @media screen and (min-width: $desktop-bp-min) {
+      min-width: 300px;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    min-width: 350px;
+  }
 }
 
 .header__information {
-  margin-bottom: 76px;
-}
+  margin-bottom: 79px;
 
-@media screen and (min-width: $desktop-bp-min) {
-  .navigation__button {
-    min-width: 300px;
-    font-size: 12px;
-    letter-spacing: 0.1em;
+  @media screen and (min-width: $tablet-bp-min) {
+    margin-bottom: 117px;
+  }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    margin-bottom: 107px;
   }
 }

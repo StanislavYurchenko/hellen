@@ -1,0 +1,73 @@
+ul {
+  list-style-type: none;
+  counter-reset: semester;
+}
+
+.program {
+  background-color: #111517;
+  font-family: $main-font-family;
+  color: $fifth-font-color;
+  padding-top: 49px;
+  padding-bottom: 436px;
+  background-image: url(../images/program/mobile/pic.png);
+  background-repeat: no-repeat;
+  background-size: 143px 170px;
+  background-position: bottom 316px right -18px;
+
+  @media (min-resolution: 192dpi) {
+    background-image: url(../images/program/mobile/pic@2x.png);
+  }
+
+  @media screen and (min-width: $tablet-bp-min) {
+    padding-top: 62px;
+    padding-bottom: 347px;
+    background-image: url(../images/program/tablet/pic.png);
+    background-size: 405px 280px;
+    background-position: bottom 232px right -10px;
+
+    @media (min-resolution: 192dpi) {
+      background-image: url(../images/program/tablet/pic@2x.png);
+    }
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    padding-top: 70px;
+    padding-bottom: 515px;
+    background-image: url(../images/program/desktop_1280/pic.png);
+    background-size: 546px 394px;
+    background-position: bottom 240px left -6px;
+
+    @media (min-resolution: 192dpi) {
+      background-image: url(../images/program/desktop_1280/pic@2x.png);
+    }
+
+    @media screen and (min-width: $ladge-desktop-bp-min) {
+      padding-top: 118px;
+      padding-bottom: 398px;
+      background-image: url(../images/program/desktop_1680/pic.png);
+      background-size: 700px 485px;
+      background-position: bottom 28px left -24px;
+
+      @media (min-resolution: 192dpi) {
+        background-image: url(../images/program/desktop_1680/pic@2x.png);
+      }
+    }
+  }
+}
+
+.program .heading-section {
+  text-align: center;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet-bp-min) {
+    text-align: left;
+    margin-bottom: 47px;
+  }
+  @media screen and (min-width: $desktop-bp-min) {
+    margin-bottom: 84px;
+  }
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    font-size: 45.83px;
+    margin-bottom: 150px;
+  }
+}

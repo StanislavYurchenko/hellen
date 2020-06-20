@@ -7,43 +7,36 @@
 .navigation__menu {
     display: none;
     margin-left: auto;
+
+    @media screen and (min-width: $desktop-bp-min) {
+        display: flex;
+        margin-right: 56px;
+    }
+
+    @media screen and (min-width: $ladge-desktop-bp-min) {
+        margin-right: 44px;
+    }
 }
 
 .navigation__button {
     display: none;
+
+    @media screen and (min-width: $tablet-bp-min) and (max-width: $desktop-bp-min) {
+        margin-right: 46px;
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: $tablet-bp-min) {
+        display: block;
+    }
 }
 
 .navigation__bar {
     width: 40px;
     height: 40px;
-}
+    background-color: #000000;
 
-@media screen and (min-width: $tablet-bp-min) and (max-width: $desktop-bp-min) {
-    .navigation__button {
-        margin-right: 46px;
-        margin-left: auto;
-    }
-}
-
-@media screen and (min-width: $tablet-bp-min) {
-    .navigation__button {
-        display: block;
-    }
-}
-
-@media screen and (min-width: $desktop-bp-min) {
-    .navigation__menu {
-        display: flex;
-        margin-right: 56px;
-    }
-
-    .navigation__bar {
+    @media screen and (min-width: $desktop-bp-min) {
         display: none;
-    }
-}
-
-@media screen and (min-width: $ladge-desktop-bp-min) {
-    .navigation__menu {
-        margin-right: 44px;
     }
 }
