@@ -1,3 +1,9 @@
+.slick-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .heading-section {
   font-family: $main-font-family;
   color: $sixth-font-color;
@@ -7,7 +13,80 @@
   line-height: 1.327;
 }
 
-.slider__picture {
+.slick-slider__element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $thr-background-color;
+  box-shadow: 4px 6.928px 34.96px 11.04px $rev-shadow;
+}
+
+.slick-slider__picture {
   height: 80px;
   width: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+}
+
+.slick-slider__icon {
+  width: 25px;
+  height: 14px;
+  background-size: cover;
+  background-image: url('../images/reviews/vk.png');
+  background-repeat: no-repeat;
+  margin-bottom: 22px;
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/reviews/vk@2x.png');
+  }
+}
+
+.slick-slider__element-heading {
+  font-family: $main-font-family;
+  color: $second-font-color;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 2.244;
+  text-align: center;
+}
+
+.slick-slider__element-descr {
+  font-size: 11px;
+  font-family: $main-font-family;
+  color: $seventh-font-color;
+  line-height: 1.515;
+  text-align: center;
+  padding-left: 28px;
+  padding-right: 28px;
+  margin-bottom: 20px;
+}
+
+.slick-slider__element-comment {
+  font-size: 11px;
+  font-family: $main-font-family;
+  color: $fourth-font-color;
+  line-height: 1.818;
+  font-weight: 600;
+  text-align: center;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.slick-slider__element-comment--readmore {
+  height: 18px;
+  font-size: 11px;
+  font-family: $main-font-family;
+  color: $second-font-color;
+  line-height: 1.818;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-bottom: 3px solid $border-color;
+  margin-bottom: 34px;
 }
