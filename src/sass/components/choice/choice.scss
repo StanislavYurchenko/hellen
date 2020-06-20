@@ -13,8 +13,10 @@
     margin-bottom: 16px;
   }
   @media screen and (min-width: $desktop-bp-min) {
+    margin-bottom: 22px;
   }
   @media screen and (min-width: $ladge-desktop-bp-min) {
+    margin-bottom: 55px;
   }
 }
 .choice-content-block {
@@ -25,7 +27,7 @@
     padding: 55px 107px 31px 107px;
   }
   @media screen and (min-width: $desktop-bp-min) {
-    padding: 95px 95px 55px 95px;
+    padding: 90px 80px 52px 98px;
   }
 }
 
@@ -38,6 +40,7 @@
     flex-wrap: wrap;
   }
   @media screen and (min-width: $desktop-bp-min) {
+    justify-content: space-between;
   }
 }
 
@@ -76,14 +79,41 @@
     left: 34px;
   }
 
-  &:not(:last-child) {
-    margin-bottom: 48px;
+  @media screen and (max-width: $mobile-bp-max) {
+    &:not(:last-child) {
+      margin-bottom: 48px;
+    }
   }
 
-  @media screen and (min-width: $tablet-bp-min) {
+  @media (min-width: $tablet-bp-min) and (max-width: $tablet-bp-max) {
     width: 203px;
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 55px;
+    }
+    &:nth-child(odd) {
+      margin-right: 52px;
+    }
   }
   @media screen and (min-width: $desktop-bp-min) {
-    width: 250px;
+    width: 280px;
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 77px;
+    }
+    @include font-settings(
+      $size: 18px,
+      $height: 1.62,
+      $weight: 700,
+      $color: $fourth-font-color
+    );
+
+    &::before {
+      @include font-settings(
+        $size: 21px,
+        $height: 1.4,
+        $weight: 600,
+        $color: $second-font-color
+      );
+    }
   }
 }
