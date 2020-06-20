@@ -9,33 +9,33 @@ ul {
   color: $fifth-font-color;
   padding-top: 49px;
   padding-bottom: 436px;
-  background-image: url(../images/program/mobile/pic.jpg);
+  background-image: url(../images/program/mobile/pic.png);
   background-repeat: no-repeat;
   background-position: bottom 316px right -18px;
 
   @media (min-resolution: 192dpi) {
-    background-image: url(../images/program/mobile/pic@2x.jpg);
+    background-image: url(../images/program/mobile/pic@2x.png);
   }
 
   @media screen and (min-width: $tablet-bp-min) {
     padding-top: 62px;
     padding-bottom: 342px;
-    background-image: url(../images/program/tablet/pic.jpg);
+    background-image: url(../images/program/tablet/pic.png);
     background-position: bottom 250px right -16px;
 
     @media (min-resolution: 192dpi) {
-      background-image: url(../images/program/tablet/pic@2x.jpg);
+      background-image: url(../images/program/tablet/pic@2x.png);
     }
   }
 
   @media screen and (min-width: $desktop-bp-min) {
     padding-top: 76px;
     padding-bottom: 510px;
-    background-image: url(../images/program/desctop_1280/pic.jpg);
+    background-image: url(../images/program/desctop_1280/pic.png);
     background-position: bottom 266px left;
 
     @media (min-resolution: 192dpi) {
-      background-image: url(../images/program/desctop_1280/pic@2x.jpg);
+      background-image: url(../images/program/desctop_1280/pic@2x.png);
     }
   }
 }
