@@ -19,9 +19,9 @@ ul {
 
   @media screen and (min-width: $tablet-bp-min) {
     padding-top: 62px;
-    padding-bottom: 342px;
+    padding-bottom: 347px;
     background-image: url(../images/program/tablet/pic.png);
-    background-position: bottom 250px right -16px;
+    background-position: bottom 232px right -10px;
 
     @media (min-resolution: 192dpi) {
       background-image: url(../images/program/tablet/pic@2x.png);
@@ -29,13 +29,24 @@ ul {
   }
 
   @media screen and (min-width: $desktop-bp-min) {
-    padding-top: 76px;
-    padding-bottom: 510px;
-    background-image: url(../images/program/desctop_1280/pic.png);
-    background-position: bottom 266px left;
+    padding-top: 70px;
+    padding-bottom: 515px;
+    background-image: url(../images/program/desktop_1280/pic.png);
+    background-position: bottom 240px left -6px;
 
     @media (min-resolution: 192dpi) {
-      background-image: url(../images/program/desctop_1280/pic@2x.png);
+      background-image: url(../images/program/desktop_1280/pic@2x.png);
+    }
+
+    @media screen and (min-width: $ladge-desktop-bp-min) {
+      padding-top: 118px;
+      padding-bottom: 398px;
+      background-image: url(../images/program/desktop_1680/pic.png);
+      background-position: bottom 28px left -24px;
+
+      @media (min-resolution: 192dpi) {
+        background-image: url(../images/program/desktop_1680/pic@2x.png);
+      }
     }
   }
 }
@@ -50,5 +61,9 @@ ul {
   }
   @media screen and (min-width: $desktop-bp-min) {
     margin-bottom: 84px;
+  }
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    font-size: 45.83px;
+    margin-bottom: 150px;
   }
 }
