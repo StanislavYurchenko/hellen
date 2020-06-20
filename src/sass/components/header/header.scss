@@ -1,33 +1,53 @@
 .header {
+<<<<<<< header
     padding-top: 34px;
     padding-bottom: 36px;
 }
 
 .header__navigation {
     margin-bottom: 54px;
+=======
+  padding-top: 36px;
+  padding-bottom: 50px;
+}
+
+.header__bg {
+  background-image: url(../images/header/mobile/m-bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top 65% left 0px;
+}
+
+.header__navigation {
+  margin-bottom: 56px;
+>>>>>>> dev
 }
 
 .navigation__button {
-    background: none;
-    color: $second-font-color;
-    border: 2px solid $main-color;
-    transition: color 300ms linear, background-color 250ms linear;
+  background: none;
+  color: $second-font-color;
+  border: 2px solid $main-color;
+  transition: color 300ms linear, background-color 250ms linear;
 
-    &:hover,
-    &:focus {
-        background-color: $main-color;
-        color: $fifth-font-color;
-    }
+  &:hover,
+  &:focus {
+    background-color: $main-color;
+    color: $fifth-font-color;
+  }
 }
 
 .header__information {
+<<<<<<< header
     margin-bottom: 79px;
+=======
+  margin-bottom: 76px;
+>>>>>>> dev
 }
 
 @media screen and (min-width: $desktop-bp-min) {
-    .navigation__button {
+  .navigation__button {
     min-width: 300px;
     font-size: 12px;
     letter-spacing: 0.1em;
-    }
+  }
 }
