@@ -87,11 +87,8 @@
 
       @media screen and (min-width: $tablet-bp-min) {
         width: 396px;
-
-        .teacher-about__name {
-          font-size: 29px;
-          margin-bottom: 16px;
-        }
+        font-size: 29px;
+        margin-bottom: 16px;
       }
 
       @media screen and (min-width: $desktop-bp-min) {
