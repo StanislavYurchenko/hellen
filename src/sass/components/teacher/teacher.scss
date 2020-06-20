@@ -145,10 +145,25 @@
 }
 
 .icon-list {
-  background-image: url(../images/teacher/check.svg);
-  background-repeat: no-repeat;
+  // background-image: url(../images/teacher/check.svg);
+  // background-repeat: no-repeat;
   list-style: none;
-  background-size: 16px;
+  position: relative;
+
+  // background-size: 16px;
+  &::before {
+    content: '';
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-image: url(../images/teacher/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    fill: $second-font-color;
+  }
 }
 
 .teacher-about__experience-item {
@@ -177,12 +192,34 @@
 
   @media screen and (min-width: $ladge-desktop-bp-min) {
   }
-
-  &::before {
-    content: '';
-    height: 100px;
-    width: 100px;
-  }
+}
+.Опыт_подготовки_учеников__к_ВНО___6_лет_Собстве {
+  font-size: 13px;
+  font-family: 'Montserrat';
+  color: rgb(17, 21, 23);
+  font-weight: bold;
+  line-height: 0.538;
+}
+.Опыт_подготовки_учеников_к_ВНО___6_лет_Собствен {
+  font-size: 13px;
+  font-family: 'Montserrat';
+  color: rgb(17, 21, 23);
+  font-weight: bold;
+  line-height: 1.538;
+}
+.Опыт_подготовки_учеников_к_ВНО___6_лет_Собствен {
+  font-size: 16.667px;
+  font-family: 'Montserrat';
+  color: rgb(17, 21, 23);
+  font-weight: bold;
+  line-height: 1.75;
+}
+.Опыт_подготовки_учеников_к_ВНО___6_лет_Собствен {
+  font-size: 16.667px;
+  font-family: 'Montserrat';
+  color: rgb(17, 21, 23);
+  font-weight: bold;
+  line-height: 1.75;
 }
 
 .teacher-about__biography-text {
