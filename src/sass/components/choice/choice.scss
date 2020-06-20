@@ -29,6 +29,9 @@
   @media screen and (min-width: $desktop-bp-min) {
     padding: 90px 80px 52px 98px;
   }
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    padding: 109px 60px 80px 98px;
+  }
 }
 
 .choice-content-block__list {
@@ -115,5 +118,9 @@
         $color: $second-font-color
       );
     }
+  }
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    width: 300px;
+    padding-right: 24px;
   }
 }
