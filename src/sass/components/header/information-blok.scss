@@ -1,3 +1,19 @@
+.information-blok {
+    @media screen and (min-width: $tablet-bp-min) {
+        width: 318px;
+        padding-top: 16px;
+    }
+
+    @media screen and (min-width: $desktop-bp-min) {
+        width: 525px;
+        padding-top: 68px;
+    }
+
+    @media screen and (min-width: $ladge-desktop-bp-min) {
+        width: 612px;
+    }
+}
+
 .information-blok__title {
     font-family: $main-font-family;
     font-size: 20px;
@@ -6,6 +22,24 @@
     letter-spacing: 0.03em;
     margin-bottom: 32px;
     color: $fourth-font-color;
+
+    @media screen and (min-width: $tablet-bp-min) {
+        font-size: 26px;
+        line-height: 33px;
+        margin-bottom: 22px;
+    }
+
+    @media screen and (min-width: $desktop-bp-min) {
+        font-size: 48px;
+        line-height: 58px;
+        margin-bottom: 44px;
+    }
+
+    @media screen and (min-width: $ladge-desktop-bp-min) {
+        font-size: 58px;
+        line-height: 76px;
+        margin-bottom: 35px;
+    }
 }
 
 .information-blok__title-item {
@@ -19,6 +53,20 @@
     font-weight: 800;
     letter-spacing: 0.05em;
     color: $third-font-color;
+
+    @media screen and (min-width: $tablet-bp-min) {
+        margin-bottom: 4px;
+    }
+
+    @media screen and (min-width: $desktop-bp-min) {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    @media screen and (min-width: $ladge-desktop-bp-min) {
+        font-size: 20px;
+        line-height: 33px;
+    }
 }
 
 .information-blok__warranty{
@@ -28,14 +76,46 @@
     font-weight: 800;
     color: $fourth-font-color;
     margin-bottom: 32px;
+
+    @media screen and (min-width: $tablet-bp-min) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desktop-bp-min) {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 62px;
+    }
+
+    @media screen and (min-width: $ladge-desktop-bp-min) {
+        font-size: 20px;
+        line-height: 33px;
+        margin-bottom: 44px;
+    }
 }
 
 .information-blok__warranty-item {
     color: $second-font-color;
+
+    @media screen and (min-width: $tablet-bp-min) {
+        margin-top: 4px;
+    }
+
+    @media screen and (max-width: 1279px) {
+        display: block;
+    }
 }
 
 .information-blok__button {
     display: block;
-    margin: 0 auto;
+
+    @media screen and (max-width: $mobile-bp-max) {
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: $desktop-bp-min) and (max-width: 1679px)  {
+        min-width: 300px;
+        font-size: 12px;
+    }
 }
 
