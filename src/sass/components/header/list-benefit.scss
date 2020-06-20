@@ -2,25 +2,80 @@
     list-style: none;
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: $mobile-bp-max) {
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: $tablet-bp-min) {
+        justify-content: space-between;
+    }
 }
 
 .list-benefit__item {
     display: flex;
     width: 200px;
+
+    &:not(:last-child) {
+        @media screen and (max-width: $mobile-bp-max) {
+            margin-bottom: 25px;
+        }
+
+        @media screen and (min-width: $desktop-bp-min) {
+            margin-right: 89px;
+        }
+    }
+
+    @media screen and (min-width: $desktop-bp-min) {
+        width: 338px;
+        position: relative;
+    }
+
+    @media screen and (min-width: $ladge-desktop-bp-min) {
+        width: 430px;
+    }
 }
 
-.list-benefi__svg-wrapper {
+.list-benefit__svg-wrapper {
     width: 58px;
     height: 58px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 3px solid $main-color;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        border-right: 8px solid #ffffff;
+        height: 36px;
+        position: absolute;
+        top: 8px;
+        left: 50px;
+
+        @media screen and (min-width: $desktop-bp-min) {
+            height: 71px;
+            top: 13px;
+            left: 95px;
+        }
+    }
+
+    @media screen and (min-width: $desktop-bp-min) {
+        width: 103px;
+        height: 103px;
+    }
 }
 
-.list-benefi__svg {
+.list-benefit__svg {
     width: 36px;
     height: 36px;
     fill: $main-color;
+
+    @media screen and (min-width: $desktop-bp-min) {
+        width: 45px;
+        height: 45px;
+    }
 }
 
 .list-benefit__text {
@@ -32,20 +87,22 @@
     width: 142px;
     display: flex;
     align-items: center;
-}
+    padding-left: 10px;
 
-@media screen and (max-width: $desktop-bp-min) {
-    .list-benefit {
-        flex-direction: column;
+    @media screen and (min-width: $desktop-bp-min) {
+        position: absolute;
+        top: 23px;
+        left: 84px;
+        font-size: 18px;
+        line-height: 28px;
+        padding-left: 0;
+        width: 298px;
     }
 
-    .list-benefit__item:not(:last-child) {
-        margin-bottom: 25px;
-    }
-}
-
-@media screen and (min-width: $tablet-bp-min) {
-    .list-benefit {
-        justify-content: space-between;
+    @media screen and (min-width: $ladge-desktop-bp-min) {
+        font-size: 20px;
+        line-height: 33px;
+        width: 348px;
+        top: 19px;
     }
 }

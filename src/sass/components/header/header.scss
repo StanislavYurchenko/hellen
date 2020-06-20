@@ -1,6 +1,11 @@
 .header {
-  padding-top: 36px;
-  padding-bottom: 50px;
+  padding-top: 34px;
+  padding-bottom: 36px;
+}
+
+.header__navigation {
+  margin-bottom: 54px;
+  margin-bottom: 56px;
 }
 
 .header__bg {
@@ -8,10 +13,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top 65% left 0px;
-}
-
-.header__navigation {
-  margin-bottom: 56px;
 }
 
 .navigation__button {
@@ -28,7 +29,7 @@
 }
 
 .header__information {
-  margin-bottom: 76px;
+  margin-bottom: 79px;
 }
 
 @media screen and (min-width: $desktop-bp-min) {
