@@ -1,50 +1,20 @@
 .teacher {
-  margin-left: auto;
-  margin-right: auto;
   @media screen and (max-width: $mobile-bp-max) {
-    padding-top: 20px;
-    padding-bottom: 28px;
-    padding-right: 21px;
-    padding-left: 21px;
+    padding: 250px 21px 28px;
   }
 
   @media screen and (min-width: $tablet-bp-min) {
-    padding-top: 30px;
-    padding-bottom: 33px;
+    padding: 240px 0 33px;
   }
 
   @media screen and (min-width: $desktop-bp-min) {
-    padding-top: 46px;
-    padding-bottom: 50px;
+    padding: 104px 0 50px;
   }
 
   @media screen and (min-width: $ladge-desktop-bp-min) {
-    padding-top: 62px;
-    padding-bottom: 74px;
+    padding: 326px 0 74px;
   }
 }
-
-// .heading-section {
-//   @media screen and (max-width: $mobile-bp-max) {
-//     margin-bottom: 30px;
-//     font-size: 20px;
-//   }
-
-//   @media screen and (min-width: $tablet-bp-min) {
-//     margin-bottom: 40px;
-//     font-size: 29px;
-//   }
-
-//   @media screen and (min-width: $desktop-bp-min) {
-//     margin-bottom: 62px;
-//     font-size: 40px;
-//   }
-
-//   @media screen and (min-width: $ladge-desktop-bp-min) {
-//     margin-bottom: 82px;
-//     font-size: 46px;
-//   }
-// }
 
 .teacher-wrapper {
   @media screen and (min-width: $tablet-bp-min) {
@@ -206,6 +176,12 @@
   }
 
   @media screen and (min-width: $ladge-desktop-bp-min) {
+  }
+
+  &::before {
+    content: '';
+    height: 100px;
+    width: 100px;
   }
 }
 
