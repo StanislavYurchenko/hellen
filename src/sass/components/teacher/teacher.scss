@@ -15,6 +15,23 @@
     padding: 326px 0 74px;
   }
 }
+.teacher__title {
+  @media screen and (max-width: $mobile-bp-max) {
+    margin-bottom: 28px;
+  }
+
+  @media screen and (min-width: $tablet-bp-min) {
+    margin-bottom: 38px;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    margin-bottom: 78px;
+  }
+}
 
 .teacher-wrapper {
   @media screen and (min-width: $tablet-bp-min) {
@@ -102,8 +119,26 @@
   width: 100%;
   height: 1px;
   background-color: $fourth-background-color;
-  margin-bottom: 30px;
   opacity: 0.38;
+  @media screen and (max-width: $mobile-bp-max) {
+    margin-top: 10px;
+    margin-bottom: 26px;
+  }
+
+  @media screen and (min-width: $tablet-bp-min) {
+    margin-top: 16px;
+    margin-bottom: 26px;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    margin-top: 16px;
+    margin-bottom: 42px;
+  }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    margin-top: 16px;
+    margin-bottom: 42px;
+  }
 }
 
 .teacher-about__experience {
@@ -137,10 +172,10 @@
   width: 25px;
   height: 2px;
   background-color: $main-color;
-  margin-top: 20px;
+  margin-top: 22px;
 
   @media screen and (min-width: $desktop-bp-min) {
-    margin-bottom: 40px;
+    margin-bottom: 36px;
   }
 }
 
@@ -154,8 +189,8 @@
   &::before {
     content: '';
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     background-image: url(../images/teacher/check.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -168,58 +203,50 @@
 
 .teacher-about__experience-item {
   padding-left: 18px;
+  &:not(:last-child) {
+    @media screen and (max-width: $mobile-bp-max) {
+      margin-bottom: 22px;
+    }
+
+    @media screen and (min-width: $tablet-bp-min) {
+      margin-bottom: 26px;
+    }
+
+    @media screen and (min-width: $desktop-bp-min) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $ladge-desktop-bp-min) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .teacher-about__experience-text {
+  font-family: $main-font-family;
+  color: $sixth-font-color;
+  font-weight: bold;
+  padding-left: 20px;
+
   @media screen and (max-width: $mobile-bp-max) {
     font-size: 13px;
-    font-family: $main-font-family;
-    color: $sixth-font-color;
-    font-weight: bold;
-    line-height: 1.8;
-    margin-left: 20px;
+    line-height: 1.538;
   }
 
   @media screen and (min-width: $tablet-bp-min) {
+    font-size: 13px;
+    line-height: 1.538;
   }
 
   @media screen and (min-width: $desktop-bp-min) {
-    font-size: 17px;
+    font-size: 16.667px;
     line-height: 1.75;
-    font-weight: bold;
-    margin-left: 20px;
   }
 
   @media screen and (min-width: $ladge-desktop-bp-min) {
+    font-size: 16.667px;
+    line-height: 1.75;
   }
-}
-.Опыт_подготовки_учеников__к_ВНО___6_лет_Собстве {
-  font-size: 13px;
-  font-family: 'Montserrat';
-  color: rgb(17, 21, 23);
-  font-weight: bold;
-  line-height: 0.538;
-}
-.Опыт_подготовки_учеников_к_ВНО___6_лет_Собствен {
-  font-size: 13px;
-  font-family: 'Montserrat';
-  color: rgb(17, 21, 23);
-  font-weight: bold;
-  line-height: 1.538;
-}
-.Опыт_подготовки_учеников_к_ВНО___6_лет_Собствен {
-  font-size: 16.667px;
-  font-family: 'Montserrat';
-  color: rgb(17, 21, 23);
-  font-weight: bold;
-  line-height: 1.75;
-}
-.Опыт_подготовки_учеников_к_ВНО___6_лет_Собствен {
-  font-size: 16.667px;
-  font-family: 'Montserrat';
-  color: rgb(17, 21, 23);
-  font-weight: bold;
-  line-height: 1.75;
 }
 
 .teacher-about__biography-text {
@@ -249,6 +276,7 @@
 }
 
 .teacher-about__certificate {
+  display: block;
   font-family: $main-font-family;
   color: $sixth-font-color;
   text-decoration: underline;
@@ -269,8 +297,8 @@
     font-size: 16.667px;
     line-height: 1.75;
   }
-}
 
-.teacher-about__certificate:hover {
-  color: $second-font-color;
+  &:hover {
+    color: $second-font-color;
+  }
 }
