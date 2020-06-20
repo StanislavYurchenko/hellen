@@ -8,8 +8,8 @@
   }
 
   &__item {
-    @media screen and (min-width: $tablet-bp-min) {
-      // width: 180px;
+    @media screen and (min-width: $tablet-bp-min) and (max-width: $tablet-bp-max) {
+      width: 180px;
 
       // &:not(:last-of-type) {
       //   margin-right: 28px;
