@@ -1,0 +1,263 @@
+.teacher {
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: $mobile-bp-max) {
+    padding-top: 20px;
+    padding-bottom: 28px;
+    padding-right: 21px;
+    padding-left: 21px;
+  }
+
+  @media screen and (min-width: $tablet-bp-min) {
+    padding-top: 30px;
+    padding-bottom: 33px;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    padding-top: 46px;
+    padding-bottom: 50px;
+  }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    padding-top: 62px;
+    padding-bottom: 74px;
+  }
+}
+
+// .heading-section {
+//   @media screen and (max-width: $mobile-bp-max) {
+//     margin-bottom: 30px;
+//     font-size: 20px;
+//   }
+
+//   @media screen and (min-width: $tablet-bp-min) {
+//     margin-bottom: 40px;
+//     font-size: 29px;
+//   }
+
+//   @media screen and (min-width: $desktop-bp-min) {
+//     margin-bottom: 62px;
+//     font-size: 40px;
+//   }
+
+//   @media screen and (min-width: $ladge-desktop-bp-min) {
+//     margin-bottom: 82px;
+//     font-size: 46px;
+//   }
+// }
+
+.teacher-wrapper {
+  @media screen and (min-width: $tablet-bp-min) {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+.teacher__name {
+  @media screen and (min-width: $tablet-bp-min) {
+    margin-right: 46px;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    margin-right: 86px;
+  }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    margin-right: 92px;
+  }
+}
+
+.teacher__img {
+  @media screen and (min-width: $tablet-bp-min) {
+    width: 246px;
+    height: 320px;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    width: 492px;
+    height: 644px;
+  }
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+  }
+}
+
+.teacher-about {
+  @media screen and (max-width: $mobile-bp-max) {
+    margin-top: 26px;
+  }
+
+  @media screen and (min-width: $tablet-bp-min) {
+    width: 396px;
+    font-size: 29px;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    width: 610px;
+  }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    width: 650px;
+  }
+}
+
+.teacher-about__name {
+  font-family: $main-font-family;
+  color: $sixth-font-color;
+  font-weight: bold;
+
+  @media screen and (max-width: $mobile-bp-max) {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: $tablet-bp-min) {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    font-size: 29px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    font-size: 29px;
+    margin-bottom: 20px;
+  }
+}
+
+.teacher-about__name::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: $fourth-background-color;
+  margin-bottom: 30px;
+  opacity: 0.38;
+}
+
+.teacher-about__experience {
+  font-family: $main-font-family;
+  color: $sixth-font-color;
+  font-weight: bold;
+  @media screen and (max-width: $mobile-bp-max) {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  @media screen and (min-width: $tablet-bp-min) {
+    margin-bottom: 30px;
+    font-size: 13px;
+    line-height: 1.538;
+  }
+  @media screen and (min-width: $desktop-bp-min) {
+    margin-bottom: 40px;
+    font-size: 16.667px;
+    line-height: 1.75;
+  }
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    margin-bottom: 40px;
+    font-size: 16.667px;
+    line-height: 1.75;
+  }
+}
+
+.teacher-about__experience::after {
+  display: block;
+  content: '';
+  width: 25px;
+  height: 2px;
+  background-color: $main-color;
+  margin-top: 20px;
+
+  @media screen and (min-width: $desktop-bp-min) {
+    margin-bottom: 40px;
+  }
+}
+
+.icon-list {
+  background-image: url(../images/teacher/check.svg);
+  background-repeat: no-repeat;
+  list-style: none;
+  background-size: 16px;
+}
+
+.teacher-about__experience-item {
+  padding-left: 18px;
+}
+
+.teacher-about__experience-text {
+  @media screen and (max-width: $mobile-bp-max) {
+    font-size: 13px;
+    font-family: $main-font-family;
+    color: $sixth-font-color;
+    font-weight: bold;
+    line-height: 1.8;
+    margin-left: 20px;
+  }
+
+  @media screen and (min-width: $tablet-bp-min) {
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    font-size: 17px;
+    line-height: 1.75;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+  }
+}
+
+.teacher-about__biography-text {
+  font-family: $main-font-family;
+  color: $seventh-font-color;
+
+  @media screen and (max-width: $mobile-bp-max) {
+    font-size: 11px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+  }
+  @media screen and (min-width: $tablet-bp-min) {
+    font-size: 11px;
+    line-height: 1.8;
+    margin-bottom: 27px;
+  }
+  @media screen and (min-width: $desktop-bp-min) {
+    font-size: 16.667px;
+    line-height: 1.75;
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    font-size: 16.667px;
+    line-height: 1.75;
+    margin-bottom: 38px;
+  }
+}
+
+.teacher-about__certificate {
+  font-family: $main-font-family;
+  color: $sixth-font-color;
+  text-decoration: underline;
+  @media screen and (max-width: $mobile-bp-max) {
+    font-size: 11px;
+    line-height: 2.652;
+  }
+  @media screen and (min-width: $tablet-bp-min) {
+    font-size: 11px;
+    line-height: 2.652;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    font-size: 16.667px;
+    line-height: 1.75;
+  }
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    font-size: 16.667px;
+    line-height: 1.75;
+  }
+}
+
+.teacher-about__certificate:hover {
+  color: $second-font-color;
+}
