@@ -1,14 +1,12 @@
 //semesters-list
 .semesters {
-  padding-left: 88px;
-
-  @media screen and (min-width: $tablet-bp-min) {
+  @media screen and (max-width: $tablet-bp-max) {
+    padding-left: 88px;
   }
   @media screen and (min-width: $desktop-bp-min) {
     display: flex;
   }
   @media screen and (min-width: $desktop-bp-min) {
-    padding-left: 0;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -26,15 +24,16 @@
   }
 
   &__item {
-    padding-left: 35px;
     position: relative;
-
-    @media screen and (min-width: $tablet-bp-min) {
+    @media screen and (max-width: $mobile-bp-max) {
+      padding-left: 35px;
+    }
+    @media screen and (min-width: $tablet-bp-min) and (max-width: $tablet-bp-max) {
       padding-left: 57px;
     }
     @media screen and (min-width: $desktop-bp-min) {
-      padding-left: 0;
-      width: 230px;
+      // padding-left: 0;
+      // width: 140px;
       // margin-right: 30px;
     }
 
@@ -86,9 +85,11 @@
   }
 
   &__item:not(:last-of-type) {
-    margin-bottom: $semester-mb;
+    @media screen and (max-width: $mobile-bp-max) {
+      margin-bottom: $semester-mb;
+    }
 
-    @media screen and (min-width: $tablet-bp-min) {
+    @media screen and (min-width: $tablet-bp-min) and (max-width: $tablet-bp-max) {
       margin-bottom: $semester-tablet-mb;
     }
   }
@@ -111,6 +112,7 @@
     }
     @media screen and (min-width: $desktop-bp-min) {
       font-size: 19px;
+      margin-bottom: 30px;
     }
     @media screen and (min-width: $ladge-desktop-bp-min) {
       font-size: 20.83px;

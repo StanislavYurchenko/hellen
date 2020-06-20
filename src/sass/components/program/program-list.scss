@@ -9,10 +9,15 @@
 
   &__item {
     @media screen and (min-width: $tablet-bp-min) {
-      width: 152px;
+      // width: 180px;
 
+      // &:not(:last-of-type) {
+      //   margin-right: 28px;
+      // }
+    }
+    @media screen and (min-width: $desktop-bp-min) {
       &:not(:last-of-type) {
-        margin-right: 28px;
+        margin-bottom: 30px;
       }
     }
   }
@@ -35,10 +40,11 @@
       vertical-align: middle;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop-bp-min) {
       font-size: 18px;
+      margin-bottom: 5px;
     }
-    @media screen and (min-width: 1680px) {
+    @media screen and (min-width: $ladge-desktop-bp-min) {
       font-size: 20.83px;
     }
   }

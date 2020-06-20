@@ -1,6 +1,8 @@
 //subjects-list
 .subjects {
-  margin-bottom: 12px;
+  @media screen and (max-width: $mobile-bp-max) {
+    margin-bottom: 12px;
+  }
 
   &__item {
     font-weight: 400;
@@ -9,10 +11,12 @@
     letter-spacing: 0.05em;
     color: $seventh-font-color;
     opacity: 0.5;
+    white-space: pre-line;
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop-bp-min) {
       font-size: 18.75px;
       line-height: 29.17px;
+      // width: 220px;
     }
   }
 }
