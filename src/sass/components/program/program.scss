@@ -11,6 +11,7 @@ ul {
   padding-bottom: 436px;
   background-image: url(../images/program/mobile/pic.png);
   background-repeat: no-repeat;
+  background-size: 143px 170px;
   background-position: bottom 316px right -18px;
 
   @media (min-resolution: 192dpi) {
@@ -21,6 +22,7 @@ ul {
     padding-top: 62px;
     padding-bottom: 347px;
     background-image: url(../images/program/tablet/pic.png);
+    background-size: 405px 280px;
     background-position: bottom 232px right -10px;
 
     @media (min-resolution: 192dpi) {
@@ -32,6 +34,7 @@ ul {
     padding-top: 70px;
     padding-bottom: 515px;
     background-image: url(../images/program/desktop_1280/pic.png);
+    background-size: 546px 394px;
     background-position: bottom 240px left -6px;
 
     @media (min-resolution: 192dpi) {
@@ -42,6 +45,7 @@ ul {
       padding-top: 118px;
       padding-bottom: 398px;
       background-image: url(../images/program/desktop_1680/pic.png);
+      background-size: 700px 485px;
       background-position: bottom 28px left -24px;
 
       @media (min-resolution: 192dpi) {
