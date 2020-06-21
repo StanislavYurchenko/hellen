@@ -9,11 +9,12 @@
 @import './common/common';
 @import './common/logo';
 @import './common/button';
-// SPARE
-
+@import './common/logo-anim';
+@import './common/button-anim';
+@import './common/button-hover';
 // СЮДА ПОДКЛЮЧАЕМ СВОИ СТИЛИ
 // чтобы подключить Ваш стиль удалите строку //SPARE и на ее месте подключите свой стиль
-@import './components/header/logo-anim';
+
 @import './components/header/header';
 @import './components/header/navigation';
 @import './components/header/list-navigation';
