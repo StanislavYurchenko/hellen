@@ -57,6 +57,7 @@
 
 .teacher__img {
   display: block;
+  transition: all 2s ease;
 
   @media screen and (min-width: $tablet-bp-min) {
     width: 246px;
@@ -69,9 +70,10 @@
   }
 
   &:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, .2);
   }
 }
+
 
 .teacher-about {
   @media screen and (max-width: $mobile-bp-max) {
