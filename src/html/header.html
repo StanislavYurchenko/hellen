@@ -9,29 +9,34 @@
           </svg>
           <span class="logo__item">EN</span>
         </div>
-        <p class="logo__text">
-          Адский
+        <p class="logo__text">Адский
           <span class="logo__text-item">английский</span>
         </p>
       </a>
       <ul class="navigation__menu list-navigation">
         <li class="list-navigation__item">
-          <a href="#" class="list-navigation__link">Программа обучения</a>
+          <a href="#program" class="list-navigation__link"
+            >Программа обучения</a
+          >
         </li>
         <li class="list-navigation__item">
-          <a href="#" class="list-navigation__link">о нас</a>
+          <a href="#about-us" class="list-navigation__link">о нас</a>
         </li>
         <li class="list-navigation__item">
-          <a href="#" class="list-navigation__link">варианты обучения</a>
+          <a href="#variants" class="list-navigation__link"
+            >варианты обучения</a
+          >
         </li>
         <li class="list-navigation__item">
-          <a href="#" class="list-navigation__link">контакты</a>
+          <a href="#contacts" class="list-navigation__link">контакты</a>
         </li>
       </ul>
-      <button type="button" class="navigation__button button">
-        консультация по телефону
+      <button type="button" class="navigation__button button">консультация по телефону</button>
+      <button tupe="button" class="navigation__menu-button menu">
+        <svg class="menu__svg">
+          <use href="./images/sprite.svg#open-menu" class="menu__svg-item"></use>
+        </svg>
       </button>
-      <div class="navigation__bar"></div>
     </div>
     <div class="header__information main-information">
       <div class="main-information__blok information-blok">
@@ -45,26 +50,44 @@
           Но ты гарантировано наберешь
           <span class="information-blok__warranty-item">+25 баллов</span>
         </p>
-        <button class="information-blok__button button">
+        <button class="information-blok__button button" id="FreeClassButton">
           хочу на бесплатное занятие
         </button>
       </div>
       <div class="main-information__img-wrapper">
         <picture class="main-information__img">
-          <source media="(max-width: 767px)"
-                srcset="./images/header/mobile/m-pic.png    1x,
-                  ./images/header/mobile/m-pic@2x.png 2x"/>
-          <source media="(max-width: 1279px)"
-                srcset="./images/header/tablet/t-pic.png    1x,
-                  ./images/header/tablet/t-pic@2x.png 2x"/>
-          <source media="(max-width: 1679px)"
-                srcset="./images/header/desctop_1280/d-pic.png    1x,
-                  ./images/header/desctop_1280/d-pic@2x.png 2x"/>
-          <source media="(min-width: 1680px)"
-                srcset="./images/header/desctop_1680/pic.png 1x,
-                        ./images/header/desctop_1680/pic@2x.png 2x"/>
-          <img src="./images/header/desctop_1680/pic.png"
-             alt="foto how are classes"/>
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/header/mobile/m-pic.png    1x,
+              ./images/header/mobile/m-pic@2x.png 2x
+            "
+          />
+          <source
+            media="(max-width: 1279px)"
+            srcset="
+              ./images/header/tablet/t-pic.png    1x,
+              ./images/header/tablet/t-pic@2x.png 2x
+            "
+          />
+          <source
+            media="(max-width: 1679px)"
+            srcset="
+              ./images/header/desctop_1280/d-pic.png    1x,
+              ./images/header/desctop_1280/d-pic@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 1680px)"
+            srcset="
+              ./images/header/desctop_1680/pic.png    1x,
+              ./images/header/desctop_1680/pic@2x.png 2x
+            "
+          />
+          <img
+            src="./images/header/desctop_1680/pic.png"
+            alt="foto how are classes"
+          />
         </picture>
       </div>
     </div>

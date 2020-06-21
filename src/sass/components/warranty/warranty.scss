@@ -1,5 +1,14 @@
 .warranty {
   padding-top: 50px;
+  @media (min-width: $tablet-bp-min) and (max-width: $tablet-bp-max) {
+    padding-top: 61px;
+  }
+  @media (min-width: $desktop-bp-min) and (max-width: $desktop-bp-max) {
+    padding-top: 90px;
+  }
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    padding-top: 130px;
+  }
 }
 
 .heading-section-warranty {
@@ -20,10 +29,34 @@
     $weight: 500,
     $color: $fourth-font-color
   );
-
+  letter-spacing: 0.4px;
   padding-top: 25px;
   padding-bottom: 28px;
   background-color: $second-background-color;
+  @media (min-width: $tablet-bp-min) and (max-width: $tablet-bp-max) {
+    padding-top: 35px;
+    padding-bottom: 33px;
+  }
+  @media (min-width: $desktop-bp-min) and (max-width: $desktop-bp-max) {
+    padding-top: 51px;
+    padding-bottom: 47px;
+    @include font-settings(
+      $size: 18px,
+      $height: 1.62,
+      $weight: 500,
+      $color: $fourth-font-color
+    );
+  }
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    padding-top: 60px;
+    padding-bottom: 58px;
+    @include font-settings(
+      $size: 21px,
+      $height: 1.4,
+      $weight: 500,
+      $color: $fourth-font-color
+    );
+  }
 }
 
 .warranty-content-list__item {
@@ -31,8 +64,31 @@
   padding-right: 5px;
   position: relative;
 
-  &:not(:last-child) {
-    margin-bottom: 21px;
+  @media screen and (max-width: $mobile-bp-max) {
+    &:not(:last-child) {
+      margin-bottom: 21px;
+    }
+  }
+  @media (min-width: $tablet-bp-min) and (max-width: $tablet-bp-max) {
+    padding-left: 96px;
+    padding-right: 58px;
+    &:not(:last-child) {
+      margin-bottom: 26px;
+    }
+  }
+  @media (min-width: $desktop-bp-min) and (max-width: $desktop-bp-max) {
+    padding-left: 203px;
+    padding-right: 132px;
+    &:not(:last-child) {
+      margin-bottom: 33px;
+    }
+  }
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    padding-left: 177px;
+    padding-right: 148px;
+    &:not(:last-child) {
+      margin-bottom: 34px;
+    }
   }
 }
 .warranty-content-list__item--decor {
@@ -43,7 +99,22 @@
     height: 100%;
     position: absolute;
     top: 21px;
-    left: -8px;
+    left: 2px;
+    @media (min-width: $tablet-bp-min) and (max-width: $tablet-bp-max) {
+      left: 63px;
+      top: 18px;
+      height: 130%;
+    }
+    @media (min-width: $desktop-bp-min) and (max-width: $desktop-bp-max) {
+      left: 158px;
+      top: 25px;
+      height: 120%;
+    }
+    @media screen and (min-width: $ladge-desktop-bp-min) {
+      left: 133px;
+      top: 27px;
+      height: 110%;
+    }
   }
 }
 .warranty-content-list__item-svg {
@@ -51,16 +122,25 @@
   height: 21px;
   position: absolute;
   top: 0px;
-  left: -16px;
+  left: -5px;
+  @media (min-width: $tablet-bp-min) and (max-width: $tablet-bp-max) {
+    left: 55px;
+  }
+  @media (min-width: $desktop-bp-min) and (max-width: $desktop-bp-max) {
+    left: 147px;
+    width: 23px;
+    height: 29px;
+  }
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    left: 121px;
+    width: 26px;
+    height: 30px;
+  }
 }
 .warranty-item-svg {
   fill: $main-color;
 }
 .warranty-content-list__item--text-color-decor {
-  @include font-settings(
-    $size: 11px,
-    $height: 1.818,
-    $weight: 600,
-    $color: $second-font-color
-  );
+  font-weight: 600;
+  color: $second-font-color;
 }

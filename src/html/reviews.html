@@ -1,20 +1,17 @@
 <section class="reviews">
   <div class="slick-slider container">
-    <h2 class="heading-section mobile-heading">Отзывы наших выпускников</h2>
-    <h2 class="heading-section tablet-heading">Отзывы выпускников</h2>
+    <h2 class="heading-section heading-reviews mobile-heading">Отзывы наших выпускников</h2>
+    <h2 class="heading-section heading-reviews tablet-heading">Отзывы выпускников</h2>
     <div class="slick-slide">
       <div class="slick-slide__images-wrapper">
-        <img
-          class="slick-slide__picture"
-          srcset="
-            ./images/reviews/6/mob_pic.png     80w,
-            ./images/reviews/6/mob_pic@2x.png 160w
-          "
-          src="./images/reviews/6/mob_pic.png"
-          alt="student"
-          sizes="80px"
-          height="80"
-        />
+
+        <picture class="slick-slide__picture">
+          <source media="(max-width: 767px)" srcset="./images/reviews/6/mob_pic@2x.png">
+            <source media="(max-width: 1279px)" srcset="./images/reviews/6/tab_pic@2x.png">
+          <source media="(min-width: 1280px)" srcset="./images/reviews/6/desk_pic.png">
+            <img src="./images/reviews/6/mob_pic.png" alt="">
+          </picture>
+
         <a
           class="slick-slide__icon link"
           href="https://www.vk.com"
@@ -57,6 +54,10 @@
       <li class="pagination__item pagination__item--first"></li>
       <li class="pagination__item pagination__item--second"></li>
       <li class="pagination__item pagination__item--third"></li>
+      <li class="pagination__item pagination__item--fourth pagination__item--tablet"></li>
+      <li class="pagination__item pagination__item--fifth pagination__item--tablet"></li>
+      <li class="pagination__item pagination__item--sixth pagination__item--tablet active"></li>
+      <li class="pagination__item pagination__item--seventh pagination__item--tablet"></li>
     </ul>
   </div>
 </section>
