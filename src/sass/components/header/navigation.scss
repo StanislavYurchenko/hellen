@@ -31,12 +31,25 @@
   }
 }
 
-.navigation__bar {
-  width: 40px;
-  height: 40px;
-  background-color: #000000;
+.menu {
+    cursor: pointer;
+    border: none;
+    background: none;
 
   @media screen and (min-width: $desktop-bp-min) {
     display: none;
   }
+}
+
+.menu__svg {
+    fill: $main-background-color;
+    width: 29px;
+    height: 29px;
+    display: block;
+    transition: fill 250ms linear;
+
+    &:hover,
+    &:focus {
+        fill: $main-color;
+    }
 }
