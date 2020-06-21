@@ -1,34 +1,34 @@
 .navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navigation__menu {
-    display: none;
-    margin-left: auto;
+  display: none;
+  margin-left: auto;
 
-    @media screen and (min-width: $desktop-bp-min) {
-        display: flex;
-        margin-right: 56px;
-    }
+  @media screen and (min-width: $desktop-bp-min) {
+    display: flex;
+    margin-right: 56px;
+  }
 
-    @media screen and (min-width: $ladge-desktop-bp-min) {
-        margin-right: 44px;
-    }
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    margin-right: 44px;
+  }
 }
 
 .navigation__button {
-    display: none;
+  display: none;
 
-    @media screen and (min-width: $tablet-bp-min) and (max-width: $desktop-bp-min) {
-        margin-right: 46px;
-        margin-left: auto;
-    }
+  @media screen and (min-width: $tablet-bp-min) and (max-width: $desktop-bp-min) {
+    margin-right: 46px;
+    margin-left: auto;
+  }
 
-    @media screen and (min-width: $tablet-bp-min) {
-        display: block;
-    }
+  @media screen and (min-width: $tablet-bp-min) {
+    display: block;
+  }
 }
 
 .menu {
@@ -36,9 +36,9 @@
     border: none;
     background: none;
 
-    @media screen and (min-width: $desktop-bp-min) {
-        display: none;
-    }
+  @media screen and (min-width: $desktop-bp-min) {
+    display: none;
+  }
 }
 
 .menu__svg {

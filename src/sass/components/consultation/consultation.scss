@@ -1,7 +1,7 @@
 .consultation {
   height: 540px;
 
-  &-background {
+  &__background {
     height: 540px;
     background-blend-mode: multiply;
     background-image: url(../images/consultation/mobile/pic.jpg);
@@ -11,37 +11,39 @@
     background-size: cover;
   }
 
-  &-box {
+  &__box {
     max-width: 280px;
     margin: 0 auto;
-  }
 
-  &_heading {
-    padding-top: 60px;
-    margin-bottom: 30px;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    font-weight: 700;
-    font-family: $main-font-family;
-    color: $fifth-font-color;
-    &-span {
-      color: $second-font-color;
+    &-heading {
+      padding-top: 60px;
+      margin-bottom: 30px;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      font-weight: 700;
+      font-family: $main-font-family;
+      color: $fifth-font-color;
+      &-span {
+        color: $second-font-color;
+      }
+    }
+
+    &-text {
+      font-size: 12px;
+      line-height: 20px;
+      font-family: $main-font-family;
+      font-weight: bold;
+      text-align: center;
+      color: $fifth-font-color;
+      margin-bottom: 30px;
     }
   }
 
-  &_text {
-    font-size: 12px;
-    line-height: 20px;
-    font-family: $main-font-family;
-    font-weight: bold;
-    text-align: center;
-    color: $fifth-font-color;
-    margin-bottom: 30px;
-  }
-  &_form {
+  &__form {
     width: 280px;
     margin: 0 auto;
+
     input[name='user-name'] {
       &::placeholder {
         color: $fifth-font-color;
@@ -122,34 +124,34 @@
   .consultation {
     height: 540px;
 
-    &-background {
+    &__background {
       height: 540px;
       background-image: url(../images/consultation/desctop/pic.jpg);
     }
 
-    &-box {
+    &__box {
       max-width: 688px;
-    }
 
-    &_heading {
-      margin: 0 auto;
-      padding-top: 70px;
-      margin-bottom: 42px;
-      font-size: 22px;
-      line-height: 38px;
-      max-width: 588px;
-    }
+      &-heading {
+        margin: 0 auto;
+        padding-top: 70px;
+        margin-bottom: 42px;
+        font-size: 22px;
+        line-height: 38px;
+        max-width: 588px;
+      }
 
-    &_text {
-      max-width: 456px;
-      margin: 0 auto;
-      font-size: 15px;
-      line-height: 20px;
-      font-weight: 600;
-      text-align: left;
-      margin-bottom: 44px;
+      &-text {
+        max-width: 456px;
+        margin: 0 auto;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 600;
+        text-align: left;
+        margin-bottom: 44px;
+      }
     }
-    &_form {
+    &__form {
       width: 400px;
 
       &-box input[name='user-name'] {
@@ -172,33 +174,34 @@
   .consultation {
     height: 750px;
 
-    &-background {
+    &__background {
       height: 750px;
       background-image: url(../images/consultation/desctop/pic.jpg);
     }
 
-    &-box {
-      max-width: $desktop-w;
+    &__box {
+      max-width: 1210px;
       margin: 0 auto;
+
+      &-heading {
+        padding-top: 92px;
+        margin-bottom: 60px;
+        font-size: 38px;
+        line-height: 50px;
+        max-width: 940px;
+      }
+
+      &-text {
+        max-width: 550px;
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 54px;
+      }
     }
 
-    &_heading {
-      padding-top: 92px;
-      margin-bottom: 60px;
-      font-size: 38px;
-      line-height: 50px;
-      max-width: 940px;
-    }
-
-    &_text {
-      max-width: 550px;
-      font-size: 18px;
-      line-height: 25px;
-      font-weight: 600;
-      text-align: center;
-      margin-bottom: 54px;
-    }
-    &_form {
+    &__form {
       width: 620px;
 
       &-box input[name='user-name'] {
