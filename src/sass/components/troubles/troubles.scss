@@ -7,16 +7,16 @@
     background-image: url('../../../images/troubles/fire-t.png');
     background-repeat: no-repeat;
     background-position: bottom right;
+  }
 
-    @media screen and (min-width: $desktop-bp-min) {
-      min-height: 530px;
-      background-image: url('../../../images/troubles/fire-d.png');
-    }
+  @media screen and (min-width: $desktop-bp-min) {
+    min-height: 530px;
+    background-image: url('../../../images/troubles/fire-d.png');
+  }
 
-    @media screen and (min-width: $ladge-desktop-bp-min) {
-      min-height: 560px;
-      background-image: url('../../../images/troubles/fire-ld.png');
-    }
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    min-height: 560px;
+    background-image: url('../../../images/troubles/fire-ld.png');
   }
 }
 
@@ -26,9 +26,10 @@
 
   &__wrapper {
     position: absolute;
-    top: 38px;
-    left: 20px;
-    margin: 0 auto;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
 
     @media screen and (min-width: $tablet-bp-min) {
       top: 60px;
@@ -39,7 +40,6 @@
     }
 
     @media screen and (min-width: $ladge-desktop-bp-min) {
-      left: 170px;
       top: 100px;
     }
   }
@@ -80,7 +80,7 @@
       margin-bottom: 68px;
 
       &-br {
-        @include font-settings(43px, 63px, 800, $fifth-font-color);
+        @include font-settings(46px, 63px, 800, $fifth-font-color);
       }
     }
 
@@ -97,7 +97,7 @@
       }
 
       @media screen and (min-width: $ladge-desktop-bp-min) {
-        @include font-settings(43px, 63px, 800, $second-font-color);
+        @include font-settings(46px, 63px, 800, $second-font-color);
       }
     }
   }
