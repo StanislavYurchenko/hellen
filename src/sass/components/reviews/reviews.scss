@@ -6,6 +6,11 @@
     padding-top: 94px;
     padding-bottom: 100px;
   }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    padding-top: 124px;
+    padding-bottom: 124px;
+  }
 }
 
 .slick-slider {
@@ -52,6 +57,10 @@
       background-image: url('../images/reviews/arrowl_d.svg');
       transform: translate(50%, -1000%);
     }
+
+    @media screen and (min-width: $ladge-desktop-bp-min) {
+      transform: translate(200%, -1000%);
+    }
   }
 
   &__controls--next {
@@ -66,6 +75,10 @@
       background-image: url('../images/reviews/arrowr_d.svg');
       transform: translate(-50%, -1000%);
     }
+
+    @media screen and (min-width: $ladge-desktop-bp-min) {
+      transform: translate(-200%, -1000%);
+    }
   }
 }
 
@@ -78,6 +91,10 @@
 
   @media screen and (min-width: $desktop-bp-min) {
     margin-bottom: 34px;
+  }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    margin-bottom: 40px;
   }
 }
 
@@ -208,7 +225,7 @@
     font-family: $main-font-family;
     color: $fourth-font-color;
     line-height: 1.818;
-    font-weight: 500;
+    font-weight: medium;
     text-align: center;
     padding-left: 28px;
     padding-right: 28px;
