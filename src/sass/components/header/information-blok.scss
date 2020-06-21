@@ -97,12 +97,12 @@
 .information-blok__warranty-item {
     color: $second-font-color;
 
-    @media screen and (min-width: $tablet-bp-min) {
-        margin-top: 4px;
+    @media screen and (max-width: $tablet-bp-max) {
+        display: block;
     }
 
-    @media screen and (max-width: 1279px) {
-        display: block;
+    @media screen and (min-width: $tablet-bp-min) {
+        margin-top: 4px;
     }
 }
 
@@ -113,7 +113,7 @@
         margin: 0 auto;
     }
 
-    @media screen and (min-width: $desktop-bp-min) and (max-width: 1679px)  {
+    @media screen and (min-width: $desktop-bp-min) and (max-width: $desktop-bp-max)  {
         min-width: 300px;
         font-size: 12px;
     }
