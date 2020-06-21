@@ -1,5 +1,3 @@
 // $(document).ready(function(){
-//   $('.slick-slider').slick({
-//     setting-name: setting - value;
-//     });
+//   $('.slick-slider').slick();
 //   });
