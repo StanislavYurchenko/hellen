@@ -92,6 +92,7 @@
 
 .teacher__img {
   display: block;
+  transition: all 2s ease-out;
 
   @media screen and (min-width: $tablet-bp-min) {
     width: 246px;
@@ -104,7 +105,7 @@
   }
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
