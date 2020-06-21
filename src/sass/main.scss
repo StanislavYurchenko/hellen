@@ -13,7 +13,7 @@
 
 // СЮДА ПОДКЛЮЧАЕМ СВОИ СТИЛИ
 // чтобы подключить Ваш стиль удалите строку //SPARE и на ее месте подключите свой стиль
-
+@import './components/header/logo-anim';
 @import './components/header/header';
 @import './components/header/navigation';
 @import './components/header/list-navigation';
