@@ -9,7 +9,11 @@
 }
 
 .navigation-menu {
-    padding-top: 39.5px;
+    padding-top: 34px;
+
+    @media screen and (min-width: $tablet-bp-min) {
+        padding-top: 39.5px;
+    }
 }
 
 .navigation-menu__wrapper {
