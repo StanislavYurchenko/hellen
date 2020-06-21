@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .navigation-menu {
@@ -25,6 +25,14 @@
     @media screen and (min-width: $tablet-bp-min) {
         margin-bottom: 80px;
     }
+}
+
+.logo__item--modal {
+    color: $fifth-font-color;
+}
+
+.logo__text-item--modal {
+    color: $fifth-font-color;
 }
 
 .navigation-menu__button-close {
