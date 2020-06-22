@@ -24,7 +24,7 @@ $thr-background-color: #ffffff;
 $rev-shadow: #1d1d1b17;
 
 //border-color
-$border-color:#ff00004d;
+$border-color: #ff00004d;
 
 //media
 $mobile-bp-max: 767px;
@@ -44,4 +44,4 @@ $semester-mb: 25px;
 $semester-tablet-mb: 31px;
 $circle: 10px;
 $vertical-line: calc(100% - #{$circle} + #{$semester-tablet-mb});
-$horizont-line-desc: calc(#{$desktop-bp-min} / 2 - 52vw);
+$horizont-line-desc: calc(#{$desktop-bp-min} / 2 - 53vw);
