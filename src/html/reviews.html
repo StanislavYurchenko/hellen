@@ -1,1 +1,63 @@
-<section class="reviews">reviews</section>
+<section class="reviews">
+  <div class="slick-slider container">
+    <h2 class="heading-section heading-reviews mobile-heading">Отзывы наших выпускников</h2>
+    <h2 class="heading-section heading-reviews tablet-heading">Отзывы выпускников</h2>
+    <div class="slick-slide">
+      <div class="slick-slide__images-wrapper">
+
+        <picture class="slick-slide__picture">
+          <source media="(max-width: 767px)" srcset="./images/reviews/6/mob_pic@2x.png">
+            <source media="(max-width: 1279px)" srcset="./images/reviews/6/tab_pic@2x.png">
+          <source media="(min-width: 1280px)" srcset="./images/reviews/6/desk_pic.png">
+            <img src="./images/reviews/6/mob_pic.png" alt="">
+          </picture>
+
+        <a
+          class="slick-slide__icon link"
+          href="https://www.vk.com"
+          target="_blank"
+          ><span class="visually-hidden">vk</span></a
+        >
+      </div>
+      <div class="slick-slide__text-wrapper">
+        <h3 class="slick-slide__heading">Тоня Кучеровская</h3>
+        <p class="slick-slide__descr">
+          Выпуск 2015-го года, Національний університет біоресурсів і
+          природокористування України
+        </p>
+        <p class="slick-slide__comment">
+          За короткий час занять з Оленою я опанувала граматику і поповнила свій
+          зовсім пустий словниковий запас. З першого ж заняття я зрозуміла, що
+          знаходжуся у своїй тарілці
+          <span class="slick-slide__comment--tab"
+            >. Ми з Оленою стали друзями, тому що її справді хвилювала моя
+            успішність. Вона стала для мене авторитетом, проте я не тремтіла на
+            уроках, маючи страх зробити найменшу помилку. Зараз я можу
+            похизуватись тим, що я студен</span
+          >
+          ...
+          <button class="slick-slide__comment--readmore">Читать дальше</button>
+        </p>
+      </div>
+    </div>
+
+    <div class="slick-slider__controls">
+      <button
+        class="slick-slider__button slick-slider__controls--prev"
+      ></button>
+      <button
+        class="slick-slider__button slick-slider__controls--next"
+      ></button>
+    </div>
+
+    <ul class="pagination">
+      <li class="pagination__item pagination__item--first"></li>
+      <li class="pagination__item pagination__item--second"></li>
+      <li class="pagination__item pagination__item--third"></li>
+      <li class="pagination__item pagination__item--fourth pagination__item--tablet"></li>
+      <li class="pagination__item pagination__item--fifth pagination__item--tablet"></li>
+      <li class="pagination__item pagination__item--sixth pagination__item--tablet active"></li>
+      <li class="pagination__item pagination__item--seventh pagination__item--tablet"></li>
+    </ul>
+  </div>
+</section>

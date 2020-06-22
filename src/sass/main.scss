@@ -4,6 +4,8 @@
 @import './helpers/variables';
 @import './helpers/mixin';
 @import './helpers/placeholder';
+@import './utilities/slick.scss';
+@import './utilities/slick-theme.scss';
 
 @import 'base';
 @import './common/common';
@@ -54,7 +56,6 @@
 @import './components/reviews/reviews';
 // SPARE
 // SPARE
-// SPARE
 
 @import './components/consultation/consultation';
 // SPARE
@@ -65,3 +66,4 @@
 // SPARE
 // SPARE
 // SPARE
+@import './components/menu/navigation-menu';

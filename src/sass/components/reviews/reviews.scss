@@ -1,0 +1,374 @@
+.reviews {
+  padding-top: 46px;
+  padding-bottom: 54px;
+
+  @media screen and (min-width: $desktop-bp-min) {
+    padding-top: 94px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    padding-top: 124px;
+    padding-bottom: 124px;
+  }
+}
+
+.slick-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  @media screen and (min-width: $desktop-bp-min) {
+    align-items: center;
+  }
+
+  &__button {
+    width: 20px;
+    height: 10px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(200%);
+    
+    @media screen and (min-width: $desktop-bp-min) {
+      width: 30px;
+      height: 20px;
+    }
+  }
+
+  &__controls {
+    position: relative;
+    width: 100%;
+  }
+
+  &__controls--prev {
+    left: 0;
+    background-image: url('../images/reviews/arrowl.svg');
+
+    @media screen and (min-width: $tablet-bp-min) {
+      transform: translate(-80%, -1800%);
+    }
+
+    @media screen and (min-width: $desktop-bp-min) {
+      background-image: url('../images/reviews/arrowl_d.svg');
+      transform: translate(50%, -1000%);
+    }
+
+    @media screen and (min-width: $ladge-desktop-bp-min) {
+      transform: translate(200%, -1000%);
+    }
+  }
+
+  &__controls--next {
+    right: 0;
+    background-image: url('../images/reviews/arrowr.svg');
+  
+    @media screen and (min-width: $tablet-bp-min) {
+      transform: translate(80%, -1800%);
+    }
+
+    @media screen and (min-width: $desktop-bp-min) {
+      background-image: url('../images/reviews/arrowr_d.svg');
+      transform: translate(-50%, -1000%);
+    }
+
+    @media screen and (min-width: $ladge-desktop-bp-min) {
+      transform: translate(-200%, -1000%);
+    }
+  }
+}
+
+.heading-reviews {
+  font-family: $main-font-family;
+  color: $sixth-font-color;
+  text-align: center;
+  margin-bottom: 18px;
+  line-height: 1.327;
+
+  @media screen and (min-width: $desktop-bp-min) {
+    margin-bottom: 34px;
+  }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: $tablet-bp-min) {
+  .mobile-heading {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $mobile-bp-max) {
+  .tablet-heading {
+    display: none;
+  }
+}
+
+.slick-slide {
+  display: flex;
+  flex-direction: column;
+  background-color: $thr-background-color;
+  box-shadow: 4px 6.928px 34.96px 11.04px $rev-shadow;
+  margin-bottom: 18px;
+
+  @media screen and (min-width: $tablet-bp-min) {
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    width: 1068px;
+    justify-content: center;
+    margin-bottom: 36px;
+  }
+
+  &__images-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    @media screen and (min-width: $tablet-bp-min) {
+      margin-top: 42px;
+    }
+
+    @media screen and (min-width: $desktop-bp-min) {
+      margin-right: 34px;
+    }
+  }
+
+  &__text-wrapper {
+
+    @media screen and (min-width: $tablet-bp-min) {
+      width: 462px;
+      margin-top: 42px;
+    }
+  
+    @media screen and (min-width: $desktop-bp-min) {
+      width: 700px;
+    }
+  }
+
+  &__picture {
+    height: 80px;
+    width: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $desktop-bp-min) {
+      margin-top: 0;
+      height: 150px;
+      width: 150px;
+    }
+  }
+
+  &__icon {
+    width: 25px;
+    height: 14px;
+    background-size: cover;
+    background-image: url('../images/reviews/vk.png');
+    background-repeat: no-repeat;
+    margin-bottom: 22px;
+  
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/reviews/vk@2x.png');
+    }
+  }
+
+  &__heading {
+    font-family: $main-font-family;
+    color: $second-font-color;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 2.244;
+    text-align: center;
+  
+    @media screen and (min-width: $tablet-bp-min) {
+      font-size: 18px;
+      line-height: 1.62;
+      text-align: left;
+      margin-bottom: 18px;
+    }
+
+    @media screen and (min-width: $desktop-bp-min) {
+      font-size: 25px;
+      line-height: 1.167;
+    }
+  }
+  
+  &__descr {
+    font-size: 11px;
+    font-family: $main-font-family;
+    color: $seventh-font-color;
+    line-height: 1.515;
+    text-align: center;
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-bottom: 20px;
+  
+    @media screen and (min-width: $tablet-bp-min) {
+      font-size: 12.5px;
+      line-height: 1.333;
+      text-align: left;
+      padding: 0;
+    }
+  }
+
+  &__comment {
+    font-size: 11px;
+    font-family: $main-font-family;
+    color: $fourth-font-color;
+    line-height: 1.818;
+    font-weight: medium;
+    text-align: center;
+    padding-left: 28px;
+    padding-right: 28px;
+  
+    @media screen and (min-width: $tablet-bp-min) {
+      text-align: left;
+      padding: 0;
+      margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: $desktop-bp-min) {
+      font-size: 16.667px;
+      line-height: 1.75;
+    }
+  }
+
+  &__comment--readmore {
+    height: 18px;
+    font-size: 11px;
+    font-family: $main-font-family;
+    color: $second-font-color;
+    line-height: 1.818;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-bottom: 3px solid $border-color;
+    margin-bottom: 34px;
+  
+    @media screen and (min-width: $tablet-bp-min) {
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $desktop-bp-min) {
+      font-size: 16.667px;
+      line-height: 1.75;
+      height: 25px;
+    }
+  }
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+}
+
+@media screen and (max-width: $mobile-bp-max) {
+  .slick-slide__comment--tab {
+    display: none;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+  &__item {
+    width: 54px;
+    height: 54px;
+    background-size: cover;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  
+    @media screen and (min-width: $tablet-bp-min) {
+      margin-right: 20px;
+    }
+
+    @media screen and (min-width: $desktop-bp-min) {
+      margin-right: 36px;
+    }
+  }
+
+  &__item--first {
+    background-image: url('../images/reviews/1/mob_pic.png');
+  
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/reviews/1/mob_pic@2x.png');
+    }
+  }
+
+  &__item--second {
+    background-image: url('../images/reviews/2/mob_pic.png');
+  
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/reviews/2/mob_pic@2x.png');
+    }
+  }
+
+  &__item--third {
+    background-image: url('../images/reviews/7/mob_pic.png');
+  
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/reviews/7/mob_pic@2x.png');
+    }
+  }
+
+  &__item--fourth {
+    background-image: url('../images/reviews/3/tab_pic.png');
+  
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/reviews/3/tab_pic@2x.png');
+    }
+  }
+
+  &__item--fifth {
+    background-image: url('../images/reviews/4/tab_pic.png');
+  
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/reviews/4/tab_pic@2x.png');
+    }
+  }
+
+  &__item--sixth {
+    background-image: url('../images/reviews/6/tab_pic.png');
+  
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/reviews/6/tab_pic@2x.png');
+    }
+  }
+
+  &__item--seventh {
+    background-image: url('../images/reviews/5/tab_pic.png');
+  
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/reviews/5/tab_pic@2x.png');
+    }
+  }
+}
+
+.active {
+  border-style: solid;
+  border-width: 2px;
+  border-color: $main-color;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+}
+
+@media screen and (max-width: $mobile-bp-max) {
+  .pagination__item--tablet {
+    display: none;
+  }
+}
