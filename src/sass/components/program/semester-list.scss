@@ -8,9 +8,6 @@
   }
   @media screen and (min-width: $desktop-bp-min) {
     display: flex;
-  }
-  @media screen and (min-width: $desktop-bp-min) {
-    display: flex;
     justify-content: space-between;
     position: relative;
 
@@ -39,10 +36,12 @@
     @media screen and (min-width: $tablet-bp-min) and (max-width: $tablet-bp-max) {
       padding-left: 57px;
     }
-    @media screen and (min-width: $desktop-bp-min) {
-      // padding-left: 0;
-      // width: 140px;
-      // margin-right: 30px;
+    @media screen and (min-width: $desktop-bp-min) and (max-width: $desktop-bp-max) {
+      flex: 1 1 266px;
+
+      &:last-of-type {
+        flex: 1 1 150px;
+      }
     }
 
     &::before {

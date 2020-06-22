@@ -33,10 +33,38 @@
 }
 
 .header__bg {
-  background-image: url(../images/header/mobile/m-bg.jpg);
-  background-size: contain;
+  background-image: url(../images/header/mobile/bg-m.png);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: top 65% left 0px;
+  background-position: center;
+
+  @media (min-resolution: 192dpi) {
+    background-image: url(../images/header/mobile/bg-m@2x.png);
+  }
+
+  @media (min-width: $tablet-bp-min) {
+    background-image: url(../images/header/tablet/bg-t.png);
+  }
+
+  @media (min-width: $tablet-bp-min) and (min-resolution: 192dpi) {
+    background-image: url(../images/header/tablet/bg-t@2x.png);
+  }
+
+  @media (min-width: $desktop-bp-min) {
+    background-image: url(../images/header/desctop_1280/bg-d.png);
+  }
+
+  @media (min-width: $desktop-bp-min) and (min-resolution: 192dpi) {
+    background-image: url(../images/header/desctop_1280/bg-d@2x.png);
+  }
+
+  @media (min-width: $ladge-desktop-bp-min) {
+    background-image: url(../images/header/desctop_1680/bg-ld.png);
+  }
+
+  @media (min-width: $ladge-desktop-bp-min) and (min-resolution: 192dpi) {
+    background-image: url(../images/header/desctop_1680/bg-ld@2x.png);
+  }
 }
 
 .navigation__button {
@@ -55,11 +83,8 @@
       min-width: 300px;
       font-size: 12px;
       letter-spacing: 0.1em;
-  }
-
-  @media screen and (min-width: $desktop-bp-min) {
-    padding-top: 24px;
-    padding-bottom: 24px;
+      padding-top: 24px;
+      padding-bottom: 24px;
   }
 
   @media screen and (min-width: $ladge-desktop-bp-min) {
