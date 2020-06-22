@@ -1,0 +1,129 @@
+.modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+}
+
+.navigation-menu {
+    padding-top: 34px;
+
+    @media screen and (min-width: $tablet-bp-min) {
+        padding-top: 39.5px;
+    }
+}
+
+.navigation-menu__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 54px;
+
+    @media screen and (min-width: $tablet-bp-min) {
+        margin-bottom: 80px;
+    }
+}
+
+.logo__item--modal {
+    color: $fifth-font-color;
+}
+
+.logo__text-item--modal {
+    color: $fifth-font-color;
+}
+
+.navigation-menu__button-close {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.navigation-menu__svg {
+    fill: $thr-background-color;
+    width: 29px;
+    height: 29px;
+    display: block;
+    transition: fill 250ms linear;
+
+    &:hover,
+    &:focus {
+        fill: $main-color;
+    }
+}
+
+.navigation-menu__list {
+    margin-bottom: 54px;
+
+    @media screen and (min-width: $tablet-bp-min) {
+        margin: 0 auto;
+    }
+}
+
+.navigation-menu__item {
+    margin: 0 auto;
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: $tablet-bp-min) {
+        width: 330px;
+    }
+}
+
+.navigation-menu__link {
+    font-family: $main-font-family;
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    color: $fifth-font-color;
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus {
+        color: $second-font-color;
+    }
+
+    @media screen and (min-width: $tablet-bp-min) {
+        font-size: 26px;
+        line-height: 33px;
+    }
+}
+
+.navigation-menu__button {
+  min-width: 250px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-family: $button-font-family;
+  font-size: 11px;
+  line-height: 16px;
+  background: none;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid $main-color;
+  text-transform: uppercase;
+  color: $second-font-color;
+  letter-spacing: 0.13em;
+  transition: border 250ms linear, color 300ms linear;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $thr-background-color;
+    color: $fifth-font-color;
+  }
+
+  @media screen and (min-width: $tablet-bp-min) {
+      display: none;
+  }
+}
+
+.block {
+    display: block; 
+  }

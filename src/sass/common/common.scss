@@ -36,3 +36,13 @@
     font-size: 46px;
   }
 }
+
+.block {
+  display: block !important; 
+}
+
+.no-scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
