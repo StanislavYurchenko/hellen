@@ -1,6 +1,5 @@
-
 $(document).ready(function () {
   $('.slick-slider').slick({
-    slidesToShow: 2,
+    slidesToShow: 1,
   });
 });
