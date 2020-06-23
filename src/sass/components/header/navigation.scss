@@ -22,7 +22,6 @@
   display: none;
 
   @media screen and (min-width: $tablet-bp-min) and (max-width: $desktop-bp-min) {
-    margin-right: 46px;
     margin-left: auto;
   }
 
@@ -35,6 +34,10 @@
     cursor: pointer;
     border: none;
     background: none;
+
+    @media screen and (min-width: $tablet-bp-min) {
+      margin-left: 46px;
+    }
 
   @media screen and (min-width: $desktop-bp-min) {
     display: none;
