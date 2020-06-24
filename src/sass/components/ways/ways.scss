@@ -127,6 +127,11 @@
         &--open-book {
           width: 50px;
           height: 36px;
+
+          @media screen and (min-width: $tablet-bp-min) {
+            width: 60px;
+            height: 44px;
+          }
         }
 
         &--global-communication {
@@ -142,6 +147,11 @@
         &--audio-book {
           width: 50px;
           height: 43px;
+
+          @media screen and (min-width: $tablet-bp-min) {
+            width: 55px;
+            height: 47px;
+          }
         }
       }
 
