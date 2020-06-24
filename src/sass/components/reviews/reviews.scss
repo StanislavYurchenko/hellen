@@ -5,14 +5,17 @@
 
   @media screen and (min-width: $tablet-bp-min) {
     padding-top: 66px;
+    padding-bottom: 122px;
   }
 
   @media screen and (min-width: $desktop-bp-min) {
     padding-top: 90px;
+    padding-bottom: 162px;
   }
 
   @media screen and (min-width: $ladge-desktop-bp-min) {
     padding-top: 124px;
+    padding-bottom: 192px;
   }
 }
 
@@ -71,10 +74,12 @@
   @media screen and (min-width: $tablet-bp-min)  {
     padding-top: 42px;
     display: flex;
+    padding-bottom: 42px;
   }
 
   @media screen and (min-width: $desktop-bp-min){
     padding-top: 47px;
+    padding-bottom: 47px;
   }
 }
 
@@ -89,6 +94,15 @@
 
   @media screen and (min-width: $tablet-bp-min) and (max-width: $tablet-bp-max) {
     padding-top: 14px;
+  }
+
+  @media screen and (min-width: $tablet-bp-min) {
+    width: 160px;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    width: 270px;
+    padding-left: 52px;
   }
 }
 
@@ -116,9 +130,21 @@
 }
 
 .slide-information {
-  padding-left: 22px;
-  padding-right: 22px;
-  text-align: center;
+  @media screen and (max-width: $mobile-bp-max)  {
+    padding-left: 22px;
+    padding-right: 22px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tablet-bp-min)  {
+    width: 528px;
+    padding-right: 40px;
+  }
+
+  @media screen and (min-width: $desktop-bp-min)  {
+    width: 800px;
+    padding-right: 82px;
+  }
 }
 
 .slide-information__title {
@@ -128,6 +154,16 @@
   font-weight: 800;
   letter-spacing: 0.05em;
   color: $second-font-color;
+
+  @media screen and (min-width: $tablet-bp-min)  {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    font-size: 25px;
+  }
 }
 
 .slide-information__subtitle {
@@ -138,6 +174,17 @@
   letter-spacing: 0.05em;
   color: $seventh-font-color;
   margin-bottom: 15px;
+
+  @media screen and (min-width: $tablet-bp-min)  {
+    font-size: 13px;
+    line-height: 17px;
+  }
+}
+
+.slide-information__subtitle-item {
+  @media screen and (min-width: $tablet-bp-min) {
+    display: block;
+  }
 }
 
 .slide-information__text {
@@ -147,6 +194,12 @@
   font-weight: 600;
   letter-spacing: 0.05em;
   color: $fourth-font-color;
+
+  @media screen and (min-width: $desktop-bp-min) {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 500;
+  }
 }
 
 .slide-information__text-item {
@@ -192,6 +245,12 @@
     }
   }
 
+  &__item:hover,
+  &__item:focus {
+      border: 3px solid $main-color;
+      border-radius: 50%;
+    }
+
   &__item--1 {
     background-image: url('../images/reviews/1/mob_tab_pic.png');
 
@@ -231,12 +290,30 @@
   top: 430px;
   left: 17px;
 
-  li {
+  li:not(:last-child) {
     margin-right: 10px;
 
-    &:last-child {
-      margin: 0;
-    }
+      @media screen and (min-width: $tablet-bp-min) {
+        margin-right: 20px;
+      }
+  
+      @media screen and (min-width: $desktop-bp-min) {
+        margin-right: 36px;
+      }
+  }
+
+  @media screen and (min-width: $tablet-bp-min) {
+    top: 342px;
+    left: 206px;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    top: 414px;
+    left: 373px;
+  }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    top: 420px;
   }
 }
 
@@ -248,20 +325,42 @@
   top: 625px;
   left: 65px;
   background-repeat: no-repeat;
+
+  @media screen and (min-width: $tablet-bp-min) {
+    width: 725px;
+    top: 280px;
+    left: -18px;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    width: 1180px;
+    top: 360px;
+    left: 15px;
+  }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    top: 406px;
+    left: 81px;
+  }
+}
+
+.slick-arrow {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: $tablet-bp-min) {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 .conrols__btn--prev {
-  background-image: url(../images/reviews/prev.svg);
-  width: 20px;
-  height: 11px;
-  border: none;
-  background-color: transparent;
+  background-image: url(../images/reviews/left-arrow.svg);
 }
 
 .conrols__btn--next {
-  background-image: url(../images/reviews/next.svg);
-  width: 20px;
-  height: 11px;
-  border: none;
-  background-color: transparent;
+  background-image: url(../images/reviews/right-arrow.svg);
 }
