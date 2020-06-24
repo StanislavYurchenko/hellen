@@ -39,7 +39,7 @@
       padding-top: 32px;
       padding-bottom: 25px;
       text-align: center;
-      transition: background-color 0.5s linear;
+      transition: all 0.5s linear;
 
       @media screen and (max-width: $mobile-bp-max) {
         width: 292px;
@@ -88,6 +88,7 @@
 
       &:hover {
         background-color: $main-color;
+        box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.37);
 
         .ways__list-item-icon {
           fill: $fifth-font-color;
