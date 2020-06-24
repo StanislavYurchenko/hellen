@@ -1,13 +1,13 @@
 .warranty {
-  padding-top: 50px;
+  padding-top: 28px;
   @media (min-width: $tablet-bp-min) and (max-width: $tablet-bp-max) {
-    padding-top: 61px;
+    padding-top: 33px;
   }
   @media (min-width: $desktop-bp-min) and (max-width: $desktop-bp-max) {
-    padding-top: 90px;
+    padding-top: 50px;
   }
   @media screen and (min-width: $ladge-desktop-bp-min) {
-    padding-top: 130px;
+    padding-top: 74px;
   }
 }
 
