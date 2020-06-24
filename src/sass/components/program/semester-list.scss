@@ -16,8 +16,8 @@
       display: block;
       position: absolute;
       top: -44px;
-      width: 100vw;
-      transform: translatex($horizont-line-desc);
+      width: 120vw;
+      left: $horizont-line-desc;
       height: 2px;
       background-color: $third-background-color;
 
