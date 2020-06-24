@@ -257,3 +257,27 @@
     }
   }
 }
+
+.result-block {
+  display: none;
+  position: relative;
+  color: $fifth-font-color;
+  z-index: 1;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 9px;
+  background: linear-gradient(rgba(255, 107, 8, 0.6), rgba(172, 9, 8, 0.6));
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    border-radius: 5px;
+    border: yellow dashed 3px;
+  }
+}
