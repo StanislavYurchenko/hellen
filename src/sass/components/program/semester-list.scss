@@ -16,14 +16,15 @@
       display: block;
       position: absolute;
       top: -44px;
-      width: 120vw;
-      left: $horizont-line-desc;
+      width: 100vw;
+      transform: translatex($horizont-line-desc);
       height: 2px;
       background-color: $third-background-color;
 
       @media screen and (min-width: $ladge-desktop-bp-min) {
         height: 4px;
         top: -64px;
+        left: $horizont-line-lg-desc;
       }
     }
   }
