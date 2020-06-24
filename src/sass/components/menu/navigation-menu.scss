@@ -9,6 +9,7 @@
   background-color: rgba(0, 0, 0, 0.85);
   z-index: 9999;
   transition: all 0.3s linear;
+  overflow: hidden;
 }
 
 .navigation-menu {
@@ -132,4 +133,5 @@
 
 .modal-container-show {
   transform: translatey(100%);
+  width: 100%;
 }
