@@ -14,6 +14,7 @@
   &__box {
     max-width: 280px;
     margin: 0 auto;
+    position: relative;
 
     &-heading {
       padding-top: 60px;
@@ -281,3 +282,30 @@
     border: yellow dashed 3px;
   }
 }
+
+.consultation--modal-show {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.consultation__background--modal {
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+}
+
+// .consultation__button-close--hiden {
+//   display: none;
+// }
+.consultation__button-close--visible {
+  display: block;
+  margin-left: auto;
+  padding-top: 34px;
+  padding-bottom: 50px;
+}
+// .consultation__box-heading--hiden {
+//   display: none;
+// }
