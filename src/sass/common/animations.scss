@@ -96,6 +96,12 @@
 // BUTTON -- SWING
 .btn-swing {
   animation: btn-animation 5s infinite;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: $thr-background-color;
+    color: $second-font-color;
+  }
 }
 
 @keyframes btn-animation {
