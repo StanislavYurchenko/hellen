@@ -20,19 +20,36 @@
         @media screen and (max-width: $mobile-bp-max) {
             margin-bottom: 25px;
         }
-
-        @media screen and (min-width: $desktop-bp-min) {
-            margin-right: 89px;
-        }
     }
 
     @media screen and (min-width: $desktop-bp-min) {
-        width: 338px;
         position: relative;
+
+        &--first {
+            width: 470px;
+        }
+
+        &--second {
+            width: 420px;
+        }
+
+        &--third {
+            width: 320px;
+        }
     }
 
     @media screen and (min-width: $ladge-desktop-bp-min) {
-        width: 430px;
+        &--first {
+            width: 520px;
+        }
+
+        &--second {
+            width: 440px;
+        }
+
+        &--third {
+            width: 382px;
+        }
     }
 }
 
@@ -68,7 +85,7 @@
 }
 
 .list-benefit__svg {
-    width: 36px;
+    width: 52px;
     height: 36px;
     fill: $main-color;
 
@@ -81,13 +98,13 @@
 .list-benefit__text {
     font-family: $main-font-family;
     font-size: 13px;
-    line-height: 18px;
+    line-height: 19px;
     letter-spacing: 0.05em;
     font-weight: 700;
-    width: 142px;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
+
+    @media screen and  (max-width: $tablet-bp-max) {
+        padding-left: 10px;
+    }
 
     @media screen and (min-width: $desktop-bp-min) {
         position: absolute;
@@ -95,14 +112,11 @@
         left: 84px;
         font-size: 18px;
         line-height: 28px;
-        padding-left: 0;
-        width: 298px;
     }
 
     @media screen and (min-width: $ladge-desktop-bp-min) {
         font-size: 20px;
         line-height: 33px;
-        width: 348px;
         top: 19px;
     }
 }
