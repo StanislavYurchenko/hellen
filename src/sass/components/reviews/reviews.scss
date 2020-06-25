@@ -101,7 +101,7 @@
   }
 
   @media screen and (min-width: $desktop-bp-min) {
-    width: 270px;
+    width: 265px;
     padding-left: 52px;
   }
 }
@@ -245,12 +245,6 @@
     }
   }
 
-  &__item:hover,
-  &__item:focus {
-      border: 3px solid $main-color;
-      border-radius: 50%;
-    }
-
   &__item--1 {
     background-image: url('../images/reviews/1/mob_tab_pic.png');
 
@@ -282,6 +276,11 @@
       background-image: url('../images/reviews/4/mob_tab_pic@2x.png');
     }
   }
+}
+
+li.slick-active a {
+  border: 3px solid $main-color;
+  border-radius: 50%;
 }
 
 .slick-pagination-dots {
