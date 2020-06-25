@@ -1,4 +1,6 @@
-## <magnificent-eight> TEAM PROJECT
+
+## **magnificent-eight** TEAM PROJECT
+
 
 # <p>HellEN Адский английский</p>
 
@@ -17,4 +19,8 @@
 
   - [Рабочий продукт](http://goit-hakaton.exclusionzone.club/)
 
-* ### Спасибо всей нашей дружной команде <magnificent-eight> за выполненную работу!
+
+* #### Сборку проекта осуществляли с помощью [Gulp Starter Kit](https://github.com/luxplanjay/gulp-starter-kit)
+
+* ### Спасибо всей нашей дружной команде **magnificent-eight** за выполненную работу!
+
