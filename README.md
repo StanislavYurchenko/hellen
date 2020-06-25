@@ -17,4 +17,6 @@
 
   - [Рабочий продукт](http://goit-hakaton.exclusionzone.club/)
 
+* #### Сборку проекта осуществляли с помощью [Gulp Starter Kit](https://github.com/luxplanjay/gulp-starter-kit)
+
 * ### Спасибо всей нашей дружной команде **magnificent-eight** за выполненную работу!
