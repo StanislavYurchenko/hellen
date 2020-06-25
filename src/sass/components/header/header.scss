@@ -70,7 +70,6 @@
 .navigation__button {
   background: none;
   color: $second-font-color;
-  border: 2px solid $main-color;
   transition: color 300ms linear, background-color 250ms linear;
 
   &--link {
