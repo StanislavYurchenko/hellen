@@ -73,6 +73,11 @@
   border: 2px solid $main-color;
   transition: color 300ms linear, background-color 250ms linear;
 
+  &--link {
+    text-decoration: none;
+    text-align: center;
+  }
+
   &:hover,
   &:focus {
     background-color: $main-color;
