@@ -1,13 +1,26 @@
+'use strict';
+
 const buttonFreeClassRef = document.querySelector('#FreeClassButton');
+const modalConsRef = document.querySelector('.consultation');
+const modalConsBgRef = document.querySelector('.consultation__background');
+const modalConsBnCloseRef = document.querySelector(
+  '.consultation__button-close',
+);
+const modalConsBoxRef = document.querySelector('.consultation__box-heading');
+const body = document.getElementsByTagName('body');
+
+const consultationHolder = () => {
+  modalConsRef.classList.toggle('consultation--modal-show');
+  modalConsBgRef.classList.toggle('consultation__background--modal');
+  modalConsBnCloseRef.classList.toggle('consultation__button-close--visible');
+  modalConsBoxRef.classList.toggle('display-none');
+  body[0].classList.toggle('no-scroll');
+};
 
 buttonFreeClassRef.addEventListener('click', () => {
-  const name = 'Shield generator';
+  consultationHolder();
+});
 
-  let price = 1000;
-  console.log(`Selected "${name}", unit price ${price} credits`);
-
-  price = 2000;
-  console.log(`Selected "${name}", unit price ${price} credits`);
-
-  console.log('\n');
+modalConsBnCloseRef.addEventListener('click', () => {
+  consultationHolder();
 });

@@ -1,0 +1,151 @@
+// LOGO -- FIRE -- ICON -- ANIMATION
+.svg-box {
+  width: 24px;
+  height: auto;
+  position: relative;
+
+  @media screen and (min-width: $tablet-bp-min) {
+    width: 28px;
+  }
+}
+
+.logo-svg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: -5px;
+  top: -28px;
+
+  @media screen and (min-width: $tablet-bp-min) {
+    left: -6px;
+  }
+}
+
+.flame {
+  animation-name: flamefly;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  transform-origin: 50% 50% 0;
+}
+
+.flame.one {
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
+
+.flame3.two {
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+
+.flame-main {
+  animation-name: flameWobble;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.flame-main.one {
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+
+.flame-main.two {
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+.flame-main.three {
+  animation-duration: 2.1s;
+  animation-delay: 3s;
+}
+
+.flame-main.four {
+  animation-duration: 3.2s;
+  animation-delay: 4s;
+}
+
+.flame-main.five {
+  animation-duration: 2.5s;
+  animation-delay: 5s;
+}
+
+@keyframes flameWobble {
+  50% {
+    transform: scale(1, 1.2) translate(0, -30px) rotate(-2deg);
+  }
+}
+
+@keyframes flamefly {
+  0% {
+    transform: translate(0) rotate(180deg);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-20px, -100px) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+// BUTTON -- SWING
+.btn-swing {
+  animation: btn-animation 5s infinite;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: $thr-background-color;
+    color: $second-font-color;
+  }
+}
+
+@keyframes btn-animation {
+  0% {
+    transform: scale(1);
+  }
+
+  10% {
+    transform: scale(1);
+  }
+
+  13% {
+    transform: scale(1.03);
+  }
+
+  16% {
+    transform: scale(1.03) rotate(-3deg);
+  }
+
+  19% {
+    transform: scale(1.03) rotate(3deg);
+  }
+
+  23% {
+    transform: scale(1.03) rotate(-2deg);
+  }
+
+  26% {
+    transform: scale(1.03) rotate(2deg);
+  }
+
+  29% {
+    transform: scale(1.03) rotate(-1deg);
+  }
+
+  32% {
+    transform: scale(1.03) rotate(1deg);
+  }
+
+  35% {
+    transform: scale(1.03) rotate(-0.5deg);
+  }
+
+  40% {
+    transform: scale(1) rotate(0);
+  }
+}

@@ -8,7 +8,7 @@ ul {
   font-family: $main-font-family;
   color: $fifth-font-color;
   padding-top: 49px;
-  padding-bottom: 436px;
+  padding-bottom: 424px;
   background-image: url(../images/program/mobile/pic.png);
   background-repeat: no-repeat;
   background-size: 143px 170px;
@@ -20,10 +20,10 @@ ul {
 
   @media screen and (min-width: $tablet-bp-min) {
     padding-top: 62px;
-    padding-bottom: 347px;
+    padding-bottom: 359px;
     background-image: url(../images/program/tablet/pic.png);
     background-size: 405px 280px;
-    background-position: bottom 232px right -10px;
+    background-position: bottom 251px right -17px;
 
     @media (min-resolution: 192dpi) {
       background-image: url(../images/program/tablet/pic@2x.png);
@@ -35,7 +35,7 @@ ul {
     padding-bottom: 515px;
     background-image: url(../images/program/desktop_1280/pic.png);
     background-size: 546px 394px;
-    background-position: bottom 240px left -6px;
+    background-position: bottom 266px left;
 
     @media (min-resolution: 192dpi) {
       background-image: url(../images/program/desktop_1280/pic@2x.png);
@@ -46,7 +46,7 @@ ul {
       padding-bottom: 398px;
       background-image: url(../images/program/desktop_1680/pic.png);
       background-size: 700px 485px;
-      background-position: bottom 28px left -24px;
+      background-position: bottom 59px left;
 
       @media (min-resolution: 192dpi) {
         background-image: url(../images/program/desktop_1680/pic@2x.png);
@@ -56,11 +56,15 @@ ul {
 }
 
 .program .heading-section {
-  text-align: center;
-  margin-bottom: 30px;
+  @media screen and (max-width: $mobile-bp-max) {
+    margin-bottom: 30px;
+    text-align: center;
+    padding-left: 18px;
+  }
 
   @media screen and (min-width: $tablet-bp-min) {
     text-align: left;
+    padding-left: 7px;
     margin-bottom: 47px;
   }
   @media screen and (min-width: $desktop-bp-min) {
