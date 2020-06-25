@@ -1,284 +1,227 @@
-.reviews {
-  padding-top: 46px;
-  padding-bottom: 54px;
+.slider__container {
+  position: relative;
+  padding-top: 48px;
+  padding-bottom: 96px;
+
+  @media screen and (min-width: $tablet-bp-min) {
+    padding-top: 66px;
+    padding-bottom: 122px;
+  }
 
   @media screen and (min-width: $desktop-bp-min) {
-    padding-top: 94px;
-    padding-bottom: 100px;
+    padding-top: 90px;
+    padding-bottom: 162px;
   }
 
   @media screen and (min-width: $ladge-desktop-bp-min) {
     padding-top: 124px;
-    padding-bottom: 124px;
+    padding-bottom: 192px;
   }
 }
 
-.slick-slider {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-
-  @media screen and (min-width: $desktop-bp-min) {
-    align-items: center;
-  }
-
-  &__button {
-    width: 20px;
-    height: 10px;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    transform: translateY(200%);
-    
-    @media screen and (min-width: $desktop-bp-min) {
-      width: 30px;
-      height: 20px;
-    }
-  }
-
-  &__controls {
-    position: relative;
-    width: 100%;
-  }
-
-  &__controls--prev {
-    left: 0;
-    background-image: url('../images/reviews/arrowl.svg');
-
-    @media screen and (min-width: $tablet-bp-min) {
-      transform: translate(-80%, -1800%);
-    }
-
-    @media screen and (min-width: $desktop-bp-min) {
-      background-image: url('../images/reviews/arrowl_d.svg');
-      transform: translate(50%, -1000%);
-    }
-
-    @media screen and (min-width: $ladge-desktop-bp-min) {
-      transform: translate(200%, -1000%);
-    }
-  }
-
-  &__controls--next {
-    right: 0;
-    background-image: url('../images/reviews/arrowr.svg');
-  
-    @media screen and (min-width: $tablet-bp-min) {
-      transform: translate(80%, -1800%);
-    }
-
-    @media screen and (min-width: $desktop-bp-min) {
-      background-image: url('../images/reviews/arrowr_d.svg');
-      transform: translate(-50%, -1000%);
-    }
-
-    @media screen and (min-width: $ladge-desktop-bp-min) {
-      transform: translate(-200%, -1000%);
-    }
-  }
-}
-
-.heading-reviews {
+.slider__title {
   font-family: $main-font-family;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
   color: $sixth-font-color;
   text-align: center;
-  margin-bottom: 18px;
-  line-height: 1.327;
+  margin-bottom: 22px;
+
+  @media screen and (min-width: $tablet-bp-min) {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 42px;
+  }
 
   @media screen and (min-width: $desktop-bp-min) {
-    margin-bottom: 34px;
+    font-size: 42px;
+    line-height: 62px;
+    margin-bottom: 35px;
   }
 
   @media screen and (min-width: $ladge-desktop-bp-min) {
-    margin-bottom: 40px;
+    font-size: 46px;
+    line-height: 62px;
+    margin-bottom: 44px;
   }
 }
 
-@media screen and (min-width: $tablet-bp-min) {
-  .mobile-heading {
+.slider__title-item {
+  @media screen and (min-width: $tablet-bp-min) {
     display: none;
   }
 }
 
-@media screen and (max-width: $mobile-bp-max) {
-  .tablet-heading {
-    display: none;
+.slider__shadow {
+  box-shadow: 4px 6.928px 34.96px 11.04px $rev-shadow;
+
+  @media screen and (min-width: $desktop-bp-min) {
+    width: 1070px;
+    margin: 0 auto;
   }
 }
 
-.slick-slide {
+.js-slick  {
+  position: relative;
+}
+
+.slide__wrapper {
+  padding-top: 22px;
+  padding-bottom: 34px;
+
+  @media screen and (min-width: $tablet-bp-min)  {
+    padding-top: 42px;
+    display: flex;
+    padding-bottom: 42px;
+  }
+
+  @media screen and (min-width: $desktop-bp-min){
+    padding-top: 47px;
+    padding-bottom: 47px;
+  }
+}
+
+.slide-img {
   display: flex;
   flex-direction: column;
-  background-color: $thr-background-color;
-  box-shadow: 4px 6.928px 34.96px 11.04px $rev-shadow;
-  margin-bottom: 18px;
+  align-items: center;
+
+  @media screen and (max-width: $mobile-bp-max) {
+    margin-bottom: 26px;
+  }
+
+  @media screen and (min-width: $tablet-bp-min) and (max-width: $tablet-bp-max) {
+    padding-top: 14px;
+  }
 
   @media screen and (min-width: $tablet-bp-min) {
-    flex-direction: row;
-    justify-content: space-around;
-    position: relative;
+    width: 160px;
   }
 
   @media screen and (min-width: $desktop-bp-min) {
-    width: 1068px;
-    justify-content: center;
-    margin-bottom: 36px;
+    width: 270px;
+    padding-left: 52px;
   }
+}
 
-  &__images-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    @media screen and (min-width: $tablet-bp-min) {
-      margin-top: 42px;
-    }
+.slide-img__picture {
+  width: 80px; 
+  height: 80px;
+  margin-bottom: 16px;
 
-    @media screen and (min-width: $desktop-bp-min) {
-      margin-right: 34px;
-    }
-  }
-
-  &__text-wrapper {
-
-    @media screen and (min-width: $tablet-bp-min) {
-      width: 462px;
-      margin-top: 42px;
-    }
-  
-    @media screen and (min-width: $desktop-bp-min) {
-      width: 700px;
-    }
-  }
-
-  &__picture {
-    height: 80px;
-    width: 80px;
-    margin-top: 20px;
+  @media screen and (min-width: $tablet-bp-min) {
     margin-bottom: 20px;
-
-    @media screen and (min-width: $desktop-bp-min) {
-      margin-top: 0;
-      height: 150px;
-      width: 150px;
-    }
   }
 
-  &__icon {
-    width: 25px;
-    height: 14px;
-    background-size: cover;
-    background-image: url('../images/reviews/vk.png');
-    background-repeat: no-repeat;
-    margin-bottom: 22px;
-  
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/reviews/vk@2x.png');
-    }
+  @media screen and (min-width: $desktop-bp-min) {
+    width: 145px;
+    height: 145px;
+  }
+}
+
+.slide-img__link {
+  width: 25px;
+  height: 25px;
+  background-image: url(../images/reviews/vk.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-information {
+  @media screen and (max-width: $mobile-bp-max)  {
+    padding-left: 22px;
+    padding-right: 22px;
+    text-align: center;
   }
 
-  &__heading {
-    font-family: $main-font-family;
-    color: $second-font-color;
+  @media screen and (min-width: $tablet-bp-min)  {
+    width: 528px;
+    padding-right: 40px;
+  }
+
+  @media screen and (min-width: $desktop-bp-min)  {
+    width: 800px;
+    padding-right: 82px;
+  }
+}
+
+.slide-information__title {
+  font-family: $main-font-family;
+  font-size: 13px;
+  line-height: 23px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: $second-font-color;
+
+  @media screen and (min-width: $tablet-bp-min)  {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    font-size: 25px;
+  }
+}
+
+.slide-information__subtitle {
+  font-family: $main-font-family;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: $seventh-font-color;
+  margin-bottom: 15px;
+
+  @media screen and (min-width: $tablet-bp-min)  {
     font-size: 13px;
-    font-weight: bold;
-    line-height: 2.244;
-    text-align: center;
-  
-    @media screen and (min-width: $tablet-bp-min) {
-      font-size: 18px;
-      line-height: 1.62;
-      text-align: left;
-      margin-bottom: 18px;
-    }
-
-    @media screen and (min-width: $desktop-bp-min) {
-      font-size: 25px;
-      line-height: 1.167;
-    }
-  }
-  
-  &__descr {
-    font-size: 11px;
-    font-family: $main-font-family;
-    color: $seventh-font-color;
-    line-height: 1.515;
-    text-align: center;
-    padding-left: 28px;
-    padding-right: 28px;
-    margin-bottom: 20px;
-  
-    @media screen and (min-width: $tablet-bp-min) {
-      font-size: 12.5px;
-      line-height: 1.333;
-      text-align: left;
-      padding: 0;
-    }
-  }
-
-  &__comment {
-    font-size: 11px;
-    font-family: $main-font-family;
-    color: $fourth-font-color;
-    line-height: 1.818;
-    font-weight: medium;
-    text-align: center;
-    padding-left: 28px;
-    padding-right: 28px;
-  
-    @media screen and (min-width: $tablet-bp-min) {
-      text-align: left;
-      padding: 0;
-      margin-bottom: 50px;
-    }
-
-    @media screen and (min-width: $desktop-bp-min) {
-      font-size: 16.667px;
-      line-height: 1.75;
-    }
-  }
-
-  &__comment--readmore {
-    height: 18px;
-    font-size: 11px;
-    font-family: $main-font-family;
-    color: $second-font-color;
-    line-height: 1.818;
-    font-weight: 600;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    border-bottom: 3px solid $border-color;
-    margin-bottom: 34px;
-  
-    @media screen and (min-width: $tablet-bp-min) {
-      margin-bottom: 0;
-    }
-
-    @media screen and (min-width: $desktop-bp-min) {
-      font-size: 16.667px;
-      line-height: 1.75;
-      height: 25px;
-    }
+    line-height: 17px;
   }
 }
 
-.link {
-  display: block;
-  text-decoration: none;
+.slide-information__subtitle-item {
+  @media screen and (min-width: $tablet-bp-min) {
+    display: block;
+  }
 }
 
-@media screen and (max-width: $mobile-bp-max) {
-  .slick-slide__comment--tab {
+.slide-information__text {
+  font-family: $main-font-family;
+  font-size: 11px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: $fourth-font-color;
+
+  @media screen and (min-width: $desktop-bp-min) {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+}
+
+.slide-information__text-item {
+  @media screen and (max-width: $mobile-bp-max) {
     display: none;
   }
 }
 
+.slide-information_btn {
+  font-size: 11px;
+  line-height: 20px;
+  font-family: $main-font-family;
+  color: $second-font-color;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-bottom: 3px solid $border-color;
+}
+
 .pagination {
+
   display: flex;
   justify-content: center;
   list-style: none;
@@ -287,11 +230,12 @@
     width: 54px;
     height: 54px;
     background-size: cover;
+    display: block;
   }
 
   &__item:not(:last-child) {
     margin-right: 10px;
-  
+
     @media screen and (min-width: $tablet-bp-min) {
       margin-right: 20px;
     }
@@ -301,74 +245,122 @@
     }
   }
 
-  &__item--first {
-    background-image: url('../images/reviews/1/mob_pic.png');
-  
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/reviews/1/mob_pic@2x.png');
+  &__item:hover,
+  &__item:focus {
+      border: 3px solid $main-color;
+      border-radius: 50%;
+    }
+
+  &__item--1 {
+    background-image: url('../images/reviews/1/mob_tab_pic.png');
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../images/reviews/1/mob_tab_pic@2x.png');
     }
   }
 
-  &__item--second {
-    background-image: url('../images/reviews/2/mob_pic.png');
-  
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/reviews/2/mob_pic@2x.png');
+  &__item--2 {
+    background-image: url('../images/reviews/2/mob_tab_pic.png');
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../images/reviews/2/mob_tab_pic@2x.png');
     }
   }
 
-  &__item--third {
-    background-image: url('../images/reviews/7/mob_pic.png');
-  
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/reviews/7/mob_pic@2x.png');
+  &__item--3 {
+    background-image: url('../images/reviews/3/mob_tab_pic.png');
+
+    @media (min-resolution: 192dpi) {
+      background-image: url('../images/reviews/3/mob_tab_pic@2x.png');
     }
   }
 
-  &__item--fourth {
-    background-image: url('../images/reviews/3/tab_pic.png');
-  
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/reviews/3/tab_pic@2x.png');
-    }
-  }
+  &__item--4 {
+    background-image: url('../images/reviews/4/mob_tab_pic.png');
 
-  &__item--fifth {
-    background-image: url('../images/reviews/4/tab_pic.png');
-  
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/reviews/4/tab_pic@2x.png');
-    }
-  }
-
-  &__item--sixth {
-    background-image: url('../images/reviews/6/tab_pic.png');
-  
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/reviews/6/tab_pic@2x.png');
-    }
-  }
-
-  &__item--seventh {
-    background-image: url('../images/reviews/5/tab_pic.png');
-  
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/reviews/5/tab_pic@2x.png');
+      background-image: url('../images/reviews/4/mob_tab_pic@2x.png');
     }
   }
 }
 
-.active {
-  border-style: solid;
-  border-width: 2px;
-  border-color: $main-color;
-  border-radius: 50%;
-  width: 56px;
-  height: 56px;
+.slick-pagination-dots {
+  display: flex;
+  position: absolute;
+  top: 430px;
+  left: 17px;
+
+  li:not(:last-child) {
+    margin-right: 10px;
+
+      @media screen and (min-width: $tablet-bp-min) {
+        margin-right: 20px;
+      }
+  
+      @media screen and (min-width: $desktop-bp-min) {
+        margin-right: 36px;
+      }
+  }
+
+  @media screen and (min-width: $tablet-bp-min) {
+    top: 342px;
+    left: 206px;
+  }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    top: 414px;
+    left: 373px;
+  }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    top: 420px;
+  }
 }
 
-@media screen and (max-width: $mobile-bp-max) {
-  .pagination__item--tablet {
-    display: none;
+.conrols {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  position: absolute;
+  top: 625px;
+  left: 65px;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: $tablet-bp-min) {
+    width: 725px;
+    top: 280px;
+    left: -18px;
   }
+
+  @media screen and (min-width: $desktop-bp-min) {
+    width: 1180px;
+    top: 360px;
+    left: 15px;
+  }
+
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+    top: 406px;
+    left: 81px;
+  }
+}
+
+.slick-arrow {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: $tablet-bp-min) {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.conrols__btn--prev {
+  background-image: url(../images/reviews/left-arrow.svg);
+}
+
+.conrols__btn--next {
+  background-image: url(../images/reviews/right-arrow.svg);
 }

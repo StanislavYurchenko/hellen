@@ -1,10 +1,10 @@
 //semesters-list
 .semesters {
-  @media screen and (max-width: $tablet-bp-max) {
-    padding-left: 88px;
+  @media screen and (max-width: $mobile-bp-max) {
+    padding-left: 67px;
   }
-  @media screen and (min-width: $desktop-bp-min) {
-    display: flex;
+  @media screen and (min-width: $tablet-bp-min) and (max-width: $tablet-bp-max) {
+    padding-left: 95px;
   }
   @media screen and (min-width: $desktop-bp-min) {
     display: flex;
@@ -24,6 +24,7 @@
       @media screen and (min-width: $ladge-desktop-bp-min) {
         height: 4px;
         top: -64px;
+        left: $horizont-line-lg-desc;
       }
     }
   }
@@ -36,17 +37,19 @@
     @media screen and (min-width: $tablet-bp-min) and (max-width: $tablet-bp-max) {
       padding-left: 57px;
     }
-    @media screen and (min-width: $desktop-bp-min) {
-      // padding-left: 0;
-      // width: 140px;
-      // margin-right: 30px;
+    @media screen and (min-width: $desktop-bp-min) and (max-width: $desktop-bp-max) {
+      flex: 1 1 266px;
+
+      &:last-of-type {
+        flex: 1 1 150px;
+      }
     }
 
     &::before {
       content: '';
       display: block;
       width: 2px;
-      height: calc(100% + #{$semester-mb});
+      height: calc(100% - #{$circle} + #{$semester-mb});
       background-color: $third-background-color;
       position: absolute;
       left: 4px;
@@ -54,6 +57,7 @@
 
       @media screen and (min-width: $tablet-bp-min) {
         height: $vertical-line;
+        top: 20px;
       }
 
       @media screen and (min-width: $desktop-bp-min) {
@@ -68,8 +72,8 @@
     &::after {
       content: '';
       display: block;
-      width: 10px;
-      height: 10px;
+      width: $circle;
+      height: $circle;
       border-radius: 50%;
       background-color: $main-color;
       position: absolute;
