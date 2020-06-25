@@ -56,6 +56,9 @@
 }
 
 .teacher__img {
+  display: block;
+  transition: all 2s ease;
+
   @media screen and (min-width: $tablet-bp-min) {
     width: 246px;
     height: 320px;
@@ -66,7 +69,8 @@
     height: 644px;
   }
 
-  @media screen and (min-width: $ladge-desktop-bp-min) {}
+  @media screen and (min-width: $ladge-desktop-bp-min) {
+  }
 }
 
 .teacher-about {
