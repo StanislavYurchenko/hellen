@@ -9,7 +9,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # build artifacts
-build/
+# build/
 
 # Task
 task/
@@ -39,12 +39,12 @@ bower_components
 .lock-wscript
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
+# build/Release
 
 # Dependency directories
 node_modules/
 jspm_packages/
-build/
+# build/
 
 # Typescript v1 declaration files
 typings/
