@@ -15,6 +15,7 @@
     padding: 326px 0 74px;
   }
 }
+
 .teacher__title {
   @media screen and (max-width: $mobile-bp-max) {
     margin-bottom: 28px;
@@ -39,6 +40,7 @@
     justify-content: flex-start;
   }
 }
+
 .teacher__name {
   @media screen and (min-width: $tablet-bp-min) {
     margin-right: 46px;
@@ -54,6 +56,9 @@
 }
 
 .teacher__img {
+  display: block;
+  transition: all 2s ease;
+
   @media screen and (min-width: $tablet-bp-min) {
     width: 246px;
     height: 320px;
@@ -63,6 +68,7 @@
     width: 492px;
     height: 644px;
   }
+
   @media screen and (min-width: $ladge-desktop-bp-min) {
   }
 }
@@ -120,6 +126,7 @@
   height: 1px;
   background-color: $fourth-background-color;
   opacity: 0.38;
+
   @media screen and (max-width: $mobile-bp-max) {
     margin-top: 10px;
     margin-bottom: 26px;
@@ -145,20 +152,24 @@
   font-family: $main-font-family;
   color: $sixth-font-color;
   font-weight: bold;
+
   @media screen and (max-width: $mobile-bp-max) {
     margin-bottom: 20px;
     font-size: 13px;
   }
+
   @media screen and (min-width: $tablet-bp-min) {
     margin-bottom: 30px;
     font-size: 13px;
     line-height: 1.538;
   }
+
   @media screen and (min-width: $desktop-bp-min) {
     margin-bottom: 40px;
     font-size: 16.667px;
     line-height: 1.75;
   }
+
   @media screen and (min-width: $ladge-desktop-bp-min) {
     margin-bottom: 40px;
     font-size: 16.667px;
@@ -180,12 +191,9 @@
 }
 
 .icon-list {
-  // background-image: url(../images/teacher/check.svg);
-  // background-repeat: no-repeat;
   list-style: none;
   position: relative;
 
-  // background-size: 16px;
   &::before {
     content: '';
     display: block;
@@ -203,6 +211,7 @@
 
 .teacher-about__experience-item {
   padding-left: 18px;
+
   &:not(:last-child) {
     @media screen and (max-width: $mobile-bp-max) {
       margin-bottom: 22px;
@@ -258,16 +267,19 @@
     line-height: 1.8;
     margin-bottom: 25px;
   }
+
   @media screen and (min-width: $tablet-bp-min) {
     font-size: 11px;
     line-height: 1.8;
     margin-bottom: 27px;
   }
+
   @media screen and (min-width: $desktop-bp-min) {
     font-size: 16.667px;
     line-height: 1.75;
     margin-bottom: 32px;
   }
+
   @media screen and (min-width: $ladge-desktop-bp-min) {
     font-size: 16.667px;
     line-height: 1.75;
@@ -278,12 +290,14 @@
 .teacher-about__certificate {
   display: block;
   font-family: $main-font-family;
-  color: $sixth-font-color;
+  color: $second-font-color;
   text-decoration: underline;
+
   @media screen and (max-width: $mobile-bp-max) {
     font-size: 11px;
     line-height: 2.652;
   }
+
   @media screen and (min-width: $tablet-bp-min) {
     font-size: 11px;
     line-height: 2.652;
@@ -293,12 +307,9 @@
     font-size: 16.667px;
     line-height: 1.75;
   }
+
   @media screen and (min-width: $ladge-desktop-bp-min) {
     font-size: 16.667px;
     line-height: 1.75;
-  }
-
-  &:hover {
-    color: $second-font-color;
   }
 }
