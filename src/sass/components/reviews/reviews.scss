@@ -63,7 +63,7 @@
   }
 }
 
-.js-slick  {
+.js-slick {
   position: relative;
 }
 
@@ -71,13 +71,13 @@
   padding-top: 22px;
   padding-bottom: 34px;
 
-  @media screen and (min-width: $tablet-bp-min)  {
+  @media screen and (min-width: $tablet-bp-min) {
     padding-top: 42px;
     display: flex;
     padding-bottom: 42px;
   }
 
-  @media screen and (min-width: $desktop-bp-min){
+  @media screen and (min-width: $desktop-bp-min) {
     padding-top: 47px;
     padding-bottom: 47px;
   }
@@ -107,7 +107,7 @@
 }
 
 .slide-img__picture {
-  width: 80px; 
+  width: 80px;
   height: 80px;
   margin-bottom: 16px;
 
@@ -130,18 +130,18 @@
 }
 
 .slide-information {
-  @media screen and (max-width: $mobile-bp-max)  {
+  @media screen and (max-width: $mobile-bp-max) {
     padding-left: 22px;
     padding-right: 22px;
     text-align: center;
   }
 
-  @media screen and (min-width: $tablet-bp-min)  {
+  @media screen and (min-width: $tablet-bp-min) {
     width: 528px;
     padding-right: 40px;
   }
 
-  @media screen and (min-width: $desktop-bp-min)  {
+  @media screen and (min-width: $desktop-bp-min) {
     width: 800px;
     padding-right: 82px;
   }
@@ -155,7 +155,7 @@
   letter-spacing: 0.05em;
   color: $second-font-color;
 
-  @media screen and (min-width: $tablet-bp-min)  {
+  @media screen and (min-width: $tablet-bp-min) {
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 20px;
@@ -175,7 +175,7 @@
   color: $seventh-font-color;
   margin-bottom: 15px;
 
-  @media screen and (min-width: $tablet-bp-min)  {
+  @media screen and (min-width: $tablet-bp-min) {
     font-size: 13px;
     line-height: 17px;
   }
@@ -218,10 +218,10 @@
   border: none;
   cursor: pointer;
   border-bottom: 3px solid $border-color;
+  text-decoration: none;
 }
 
 .pagination {
-
   display: flex;
   justify-content: center;
   list-style: none;
@@ -292,13 +292,13 @@ li.slick-active a {
   li:not(:last-child) {
     margin-right: 10px;
 
-      @media screen and (min-width: $tablet-bp-min) {
-        margin-right: 20px;
-      }
-  
-      @media screen and (min-width: $desktop-bp-min) {
-        margin-right: 36px;
-      }
+    @media screen and (min-width: $tablet-bp-min) {
+      margin-right: 20px;
+    }
+
+    @media screen and (min-width: $desktop-bp-min) {
+      margin-right: 36px;
+    }
   }
 
   @media screen and (min-width: $tablet-bp-min) {
